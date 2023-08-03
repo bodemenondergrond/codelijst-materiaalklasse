@@ -10,119 +10,118 @@
 
 ct:grondwater  rdf:type  skos:Concept ;
         dc:identifier   "grondwater" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Grondwater"@nl .
 
 ct:migratie  rdf:type      skos:Concept ;
         dc:identifier      "migratie" ;
-        skos:broader       <file:///tmp/RtmptfZwxL/materiaalklasse> ;
+        skos:broader       ct:materiaalklasse ;
         skos:inScheme      cs:materiaalklasse ;
         skos:prefLabel     "Migratie"@nl ;
         skos:topConceptOf  cs:materiaalklasse .
 
+ct:materiaalklasse  skos:narrower  ct:lucht , ct:migratie , ct:plantaardigmateriaal , ct:dierlijkmateriaal , ct:water , ct:antropogeneobjecten , ct:vastdeelvdaarde .
+
 ct:melk  rdf:type       skos:Concept ;
         dc:identifier   "melk" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/dierlijkmateriaal> ;
+        skos:broader    ct:dierlijkmateriaal ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Melk"@nl .
 
-<file:///tmp/RtmptfZwxL/antropogeneobjecten>
-        skos:narrower  ct:dnapl , ct:lnapl , ct:puurproduct .
-
 ct:waterbodem  rdf:type  skos:Concept ;
         dc:identifier   "waterbodem" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/vastdeelvdaarde> ;
+        skos:broader    ct:vastdeelvdaarde ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Waterbodem"@nl .
 
-<file:///tmp/RtmptfZwxL/materiaalklasse>
-        skos:narrower  ct:lucht , ct:migratie , ct:plantaardigmateriaal , ct:dierlijkmateriaal , ct:water , ct:antropogeneobjecten , ct:vastdeelvdaarde .
-
 ct:bemalingswater  rdf:type  skos:Concept ;
         dc:identifier   "bemalingswater" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Bemalingswater"@nl .
 
 ct:zwevendestof  rdf:type  skos:Concept ;
         dc:identifier   "zwevendestof" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/lucht> ;
+        skos:broader    ct:lucht ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Zwevende stof"@nl .
 
 ct:dierlijkmateriaal  rdf:type  skos:Concept ;
         dc:identifier      "dierlijkmateriaal" ;
-        skos:broader       <file:///tmp/RtmptfZwxL/materiaalklasse> ;
+        skos:broader       ct:materiaalklasse ;
         skos:inScheme      cs:materiaalklasse ;
+        skos:narrower      ct:melk , ct:schelpdieren , ct:eieren ;
         skos:prefLabel     "Dierlijk materiaal"@nl ;
         skos:topConceptOf  cs:materiaalklasse .
 
 ct:sediment  rdf:type   skos:Concept ;
         dc:identifier   "sediment" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/vastdeelvdaarde> ;
+        skos:broader    ct:vastdeelvdaarde ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Sediment"@nl .
 
 ct:groenten  rdf:type   skos:Concept ;
         dc:identifier   "groenten" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/plantaardigmateriaal> ;
+        skos:broader    ct:plantaardigmateriaal ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Groenten"@nl .
 
 ct:strooisel  rdf:type  skos:Concept ;
         dc:identifier   "strooisel" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/plantaardigmateriaal> ;
+        skos:broader    ct:plantaardigmateriaal ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Strooisel"@nl .
 
 ct:gftafval  rdf:type   skos:Concept ;
         dc:identifier   "gftafval" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/plantaardigmateriaal> ;
+        skos:broader    ct:plantaardigmateriaal ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "GFT-afval"@nl .
 
 ct:bodem  rdf:type      skos:Concept ;
         dc:identifier   "bodem" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/vastdeelvdaarde> ;
+        skos:broader    ct:vastdeelvdaarde ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Bodem"@nl .
 
 ct:schelpdieren  rdf:type  skos:Concept ;
         dc:identifier   "schelpdieren" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/dierlijkmateriaal> ;
+        skos:broader    ct:dierlijkmateriaal ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Schelpdieren"@nl .
 
 ct:water  rdf:type         skos:Concept ;
         dc:identifier      "water" ;
-        skos:broader       <file:///tmp/RtmptfZwxL/materiaalklasse> ;
+        skos:broader       ct:materiaalklasse ;
         skos:inScheme      cs:materiaalklasse ;
-        skos:prefLabel     "Water"@nl ;
+        skos:narrower      ct:zeewater , ct:bemalingswater , ct:effluent , ct:regenwater , ct:oppervlaktewater , ct:bodemvocht , ct:afvalwater , ct:drinkwater , ct:koelwater , ct:grondwater ;
+        skos:prefLabel     "ct:water"@nl ;
         skos:topConceptOf  cs:materiaalklasse .
 
 ct:bodemlucht  rdf:type  skos:Concept ;
         dc:identifier   "bodemlucht" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/lucht> ;
+        skos:broader    ct:lucht ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Bodemlucht"@nl .
 
+ct:lucht  rdf:type         skos:Concept ;
+        dc:identifier      "lucht" ;
+        skos:broader       ct:materiaalklasse ;
+        skos:inScheme      cs:materiaalklasse ;
+        skos:narrower      ct:depositie , ct:bodemlucht , ct:zwevendestof ;
+        skos:prefLabel     "ct:lucht"@nl ;
+        skos:topConceptOf  cs:materiaalklasse .
+
 ct:vilt  rdf:type       skos:Concept ;
         dc:identifier   "vilt" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/plantaardigmateriaal> ;
+        skos:broader    ct:plantaardigmateriaal ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Vilt"@nl .
 
-ct:lucht  rdf:type         skos:Concept ;
-        dc:identifier      "lucht" ;
-        skos:broader       <file:///tmp/RtmptfZwxL/materiaalklasse> ;
-        skos:inScheme      cs:materiaalklasse ;
-        skos:prefLabel     "Lucht"@nl ;
-        skos:topConceptOf  cs:materiaalklasse .
-
 ct:fruit  rdf:type      skos:Concept ;
         dc:identifier   "fruit" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/plantaardigmateriaal> ;
+        skos:broader    ct:plantaardigmateriaal ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Fruit"@nl .
 
@@ -132,92 +131,89 @@ cs:materiaalklasse  rdf:type  skos:ConceptScheme ;
         skos:hasTopConcept  ct:plantaardigmateriaal , ct:migratie , ct:vastdeelvdaarde , ct:lucht , ct:antropogeneobjecten , ct:water , ct:dierlijkmateriaal ;
         skos:prefLabel      "Codelijst materiaalklasse."@nl .
 
-<file:///tmp/RtmptfZwxL/dierlijkmateriaal>
-        skos:narrower  ct:melk , ct:schelpdieren , ct:eieren .
-
 ct:effluent  rdf:type   skos:Concept ;
         dc:identifier   "effluent" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Effluent"@nl .
 
 ct:eieren  rdf:type     skos:Concept ;
         dc:identifier   "eieren" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/dierlijkmateriaal> ;
+        skos:broader    ct:dierlijkmateriaal ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Eieren"@nl .
 
 ct:antropogeneobjecten
         rdf:type           skos:Concept ;
         dc:identifier      "antropogeneobjecten" ;
-        skos:broader       <file:///tmp/RtmptfZwxL/materiaalklasse> ;
+        skos:broader       ct:materiaalklasse ;
         skos:inScheme      cs:materiaalklasse ;
+        skos:narrower      ct:dnapl , ct:lnapl , ct:puurproduct ;
         skos:prefLabel     "Antropogene objecten"@nl ;
         skos:topConceptOf  cs:materiaalklasse .
 
 ct:depositie  rdf:type  skos:Concept ;
         dc:identifier   "depositie" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/lucht> ;
+        skos:broader    ct:lucht ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Depositie"@nl .
 
 ct:hardgesteente  rdf:type  skos:Concept ;
         dc:identifier   "hardgesteente" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/vastdeelvdaarde> ;
+        skos:broader    ct:vastdeelvdaarde ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Hard gesteente"@nl .
 
-<file:///tmp/RtmptfZwxL/lucht>
-        skos:narrower  ct:depositie , ct:bodemlucht , ct:zwevendestof .
-
 ct:regenwater  rdf:type  skos:Concept ;
         dc:identifier   "regenwater" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Regenwater"@nl .
 
 ct:koelwater  rdf:type  skos:Concept ;
         dc:identifier   "koelwater" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Koelwater"@nl .
 
 ct:plantaardigmateriaal
         rdf:type           skos:Concept ;
         dc:identifier      "plantaardigmateriaal" ;
-        skos:broader       <file:///tmp/RtmptfZwxL/materiaalklasse> ;
+        skos:broader       ct:materiaalklasse ;
         skos:inScheme      cs:materiaalklasse ;
+        skos:narrower      ct:vilt , ct:strooisel , ct:groenten , ct:gftafval , ct:fruit ;
         skos:prefLabel     "Plantaardig materiaal"@nl ;
         skos:topConceptOf  cs:materiaalklasse .
 
 ct:zeeschuim  rdf:type  skos:Concept ;
         dc:identifier   "zeeschuim" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/Zeewater> ;
+        skos:broader    ct:zeewater ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Zeeschuim"@nl .
 
 ct:vastdeelvdaarde  rdf:type  skos:Concept ;
         dc:identifier      "vastdeelvdaarde" ;
-        skos:broader       <file:///tmp/RtmptfZwxL/materiaalklasse> ;
+        skos:broader       ct:materiaalklasse ;
         skos:inScheme      cs:materiaalklasse ;
+        skos:narrower      ct:hardgesteente , ct:bodem , ct:waterbodem , ct:sediment ;
         skos:prefLabel     "Vaste deel van de aarde"@nl ;
         skos:topConceptOf  cs:materiaalklasse .
 
 ct:afvalwater  rdf:type  skos:Concept ;
         dc:identifier   "afvalwater" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Afvalwater"@nl .
 
 ct:lnapl  rdf:type      skos:Concept ;
         dc:identifier   "lnapl" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/antropogeneobjecten> ;
+        skos:broader    ct:antropogeneobjecten ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Drijflaag (LNAPL)"@nl .
 
 ct:bodemvocht  rdf:type  skos:Concept ;
         dc:identifier   "bodemvocht" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Bodemvocht"@nl .
 
@@ -228,44 +224,33 @@ colt:materiaalklasses
         skos:member     ct:koelwater , ct:lnapl , ct:antropogeneobjecten , ct:strooisel , ct:effluent , ct:waterbodem , ct:gftafval , ct:bemalingswater , ct:water , ct:zwevendestof , ct:eieren , ct:fruit , ct:plantaardigmateriaal , ct:depositie , ct:drinkwater , ct:vastdeelvdaarde , ct:zeewater , ct:bodemlucht , ct:regenwater , ct:dierlijkmateriaal , ct:sediment , ct:oppervlaktewater , ct:migratie , ct:zeeschuim , ct:schelpdieren , ct:lucht , ct:grondwater , ct:bodemvocht , ct:afvalwater , ct:bodem , ct:puurproduct , ct:dnapl , ct:hardgesteente , ct:groenten , ct:vilt , ct:melk ;
         skos:prefLabel  "Collectie van materiaalklasses."@nl .
 
-<file:///tmp/RtmptfZwxL/Zeewater>
-        skos:narrower  ct:zeeschuim .
-
-<file:///tmp/RtmptfZwxL/water>
-        skos:narrower  ct:effluent , ct:oppervlaktewater , ct:bodemvocht , ct:afvalwater , ct:zeewater , ct:grondwater , ct:regenwater , ct:bemalingswater , ct:drinkwater , ct:koelwater .
-
 ct:dnapl  rdf:type      skos:Concept ;
         dc:identifier   "dnapl" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/antropogeneobjecten> ;
+        skos:broader    ct:antropogeneobjecten ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Zaklaag (DNAPL)"@nl .
 
 ct:drinkwater  rdf:type  skos:Concept ;
         dc:identifier   "drinkwater" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Drinkwater"@nl .
 
-<file:///tmp/RtmptfZwxL/plantaardigmateriaal>
-        skos:narrower  ct:strooisel , ct:fruit , ct:groenten , ct:gftafval , ct:vilt .
-
 ct:puurproduct  rdf:type  skos:Concept ;
         dc:identifier   "puurproduct" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/antropogeneobjecten> ;
+        skos:broader    ct:antropogeneobjecten ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Puur product"@nl .
 
 ct:oppervlaktewater  rdf:type  skos:Concept ;
         dc:identifier   "oppervlaktewater" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
         skos:prefLabel  "Oppervlaktewater"@nl .
 
 ct:zeewater  rdf:type   skos:Concept ;
         dc:identifier   "zeewater" ;
-        skos:broader    <file:///tmp/RtmptfZwxL/water> ;
+        skos:broader    ct:water ;
         skos:inScheme   cs:materiaalklasse ;
+        skos:narrower   ct:zeeschuim ;
         skos:prefLabel  "Zeewater"@nl .
-
-<file:///tmp/RtmptfZwxL/vastdeelvdaarde>
-        skos:narrower  ct:waterbodem , ct:sediment , ct:bodem , ct:hardgesteente .

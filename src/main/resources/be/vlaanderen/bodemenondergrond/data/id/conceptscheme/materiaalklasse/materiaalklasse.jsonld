@@ -10,7 +10,7 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
+                "@id": "ct:water"
             },
             "dc:identifier": "grondwater",
             "@type": "skos:Concept"
@@ -52,10 +52,24 @@
             "@type": "skos:ConceptScheme"
         },
         {
-            "@id": "file:///tmp/RtmptfZwxL/water",
+            "@id": "ct:water",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "ct:water"
+            },
+            "@type": "skos:Concept",
             "skos:narrower": [
                 {
+                    "@id": "ct:zeewater"
+                },
+                {
+                    "@id": "ct:bemalingswater"
+                },
+                {
                     "@id": "ct:effluent"
+                },
+                {
+                    "@id": "ct:regenwater"
                 },
                 {
                     "@id": "ct:oppervlaktewater"
@@ -67,24 +81,25 @@
                     "@id": "ct:afvalwater"
                 },
                 {
-                    "@id": "ct:zeewater"
-                },
-                {
-                    "@id": "ct:grondwater"
-                },
-                {
-                    "@id": "ct:regenwater"
-                },
-                {
-                    "@id": "ct:bemalingswater"
-                },
-                {
                     "@id": "ct:drinkwater"
                 },
                 {
                     "@id": "ct:koelwater"
+                },
+                {
+                    "@id": "ct:grondwater"
                 }
-            ]
+            ],
+            "dc:identifier": "water",
+            "skos:broader": {
+                "@id": "ct:materiaalklasse"
+            },
+            "skos:topConceptOf": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            }
         },
         {
             "@id": "ct:migratie",
@@ -99,13 +114,13 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/materiaalklasse"
+                "@id": "ct:materiaalklasse"
             },
             "dc:identifier": "migratie",
             "@type": "skos:Concept"
         },
         {
-            "@id": "file:///tmp/RtmptfZwxL/materiaalklasse",
+            "@id": "ct:materiaalklasse",
             "skos:narrower": [
                 {
                     "@id": "ct:vastdeelvdaarde"
@@ -131,110 +146,13 @@
             ]
         },
         {
-            "@id": "ct:melk",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Melk"
+            "@id": "ct:vastdeelvdaarde",
+            "skos:broader": {
+                "@id": "ct:materiaalklasse"
             },
-            "skos:inScheme": {
+            "skos:topConceptOf": {
                 "@id": "cs:materiaalklasse"
             },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/dierlijkmateriaal"
-            },
-            "dc:identifier": "melk",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "file:///tmp/RtmptfZwxL/dierlijkmateriaal",
-            "skos:narrower": [
-                {
-                    "@id": "ct:eieren"
-                },
-                {
-                    "@id": "ct:schelpdieren"
-                },
-                {
-                    "@id": "ct:melk"
-                }
-            ]
-        },
-        {
-            "@id": "file:///tmp/RtmptfZwxL/antropogeneobjecten",
-            "skos:narrower": [
-                {
-                    "@id": "ct:puurproduct"
-                },
-                {
-                    "@id": "ct:lnapl"
-                },
-                {
-                    "@id": "ct:dnapl"
-                }
-            ]
-        },
-        {
-            "@id": "ct:puurproduct",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Puur product"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/antropogeneobjecten"
-            },
-            "dc:identifier": "puurproduct",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:lnapl",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Drijflaag (LNAPL)"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/antropogeneobjecten"
-            },
-            "dc:identifier": "lnapl",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:dnapl",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Zaklaag (DNAPL)"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/antropogeneobjecten"
-            },
-            "dc:identifier": "dnapl",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:waterbodem",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Waterbodem"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/vastdeelvdaarde"
-            },
-            "dc:identifier": "waterbodem",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "file:///tmp/RtmptfZwxL/vastdeelvdaarde",
             "skos:narrower": [
                 {
                     "@id": "ct:hardgesteente"
@@ -243,27 +161,18 @@
                     "@id": "ct:bodem"
                 },
                 {
-                    "@id": "ct:sediment"
+                    "@id": "ct:waterbodem"
                 },
                 {
-                    "@id": "ct:waterbodem"
+                    "@id": "ct:sediment"
                 }
-            ]
-        },
-        {
-            "@id": "ct:vastdeelvdaarde",
-            "skos:topConceptOf": {
+            ],
+            "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             },
             "skos:prefLabel": {
                 "@language": "nl",
                 "@value": "Vaste deel van de aarde"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/materiaalklasse"
             },
             "dc:identifier": "vastdeelvdaarde",
             "@type": "skos:Concept"
@@ -277,31 +186,24 @@
                 "@language": "nl",
                 "@value": "Antropogene objecten"
             },
+            "skos:narrower": [
+                {
+                    "@id": "ct:puurproduct"
+                },
+                {
+                    "@id": "ct:lnapl"
+                },
+                {
+                    "@id": "ct:dnapl"
+                }
+            ],
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/materiaalklasse"
+                "@id": "ct:materiaalklasse"
             },
             "dc:identifier": "antropogeneobjecten",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:water",
-            "skos:topConceptOf": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Water"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/materiaalklasse"
-            },
-            "dc:identifier": "water",
             "@type": "skos:Concept"
         },
         {
@@ -313,31 +215,59 @@
                 "@language": "nl",
                 "@value": "Dierlijk materiaal"
             },
+            "skos:narrower": [
+                {
+                    "@id": "ct:eieren"
+                },
+                {
+                    "@id": "ct:schelpdieren"
+                },
+                {
+                    "@id": "ct:melk"
+                }
+            ],
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/materiaalklasse"
+                "@id": "ct:materiaalklasse"
             },
             "dc:identifier": "dierlijkmateriaal",
             "@type": "skos:Concept"
         },
         {
             "@id": "ct:plantaardigmateriaal",
-            "skos:topConceptOf": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Plantaardig materiaal"
-            },
+            "skos:narrower": [
+                {
+                    "@id": "ct:vilt"
+                },
+                {
+                    "@id": "ct:strooisel"
+                },
+                {
+                    "@id": "ct:groenten"
+                },
+                {
+                    "@id": "ct:gftafval"
+                },
+                {
+                    "@id": "ct:fruit"
+                }
+            ],
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/materiaalklasse"
+                "@id": "ct:materiaalklasse"
             },
             "dc:identifier": "plantaardigmateriaal",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Plantaardig materiaal"
+            },
+            "skos:topConceptOf": {
+                "@id": "cs:materiaalklasse"
+            },
             "@type": "skos:Concept"
         },
         {
@@ -347,15 +277,56 @@
             },
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Lucht"
+                "@value": "ct:lucht"
+            },
+            "skos:narrower": [
+                {
+                    "@id": "ct:zwevendestof"
+                },
+                {
+                    "@id": "ct:bodemlucht"
+                },
+                {
+                    "@id": "ct:depositie"
+                }
+            ],
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:materiaalklasse"
+            },
+            "dc:identifier": "lucht",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:melk",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Melk"
             },
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/materiaalklasse"
+                "@id": "ct:dierlijkmateriaal"
             },
-            "dc:identifier": "lucht",
+            "dc:identifier": "melk",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:waterbodem",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Waterbodem"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:vastdeelvdaarde"
+            },
+            "dc:identifier": "waterbodem",
             "@type": "skos:Concept"
         },
         {
@@ -368,7 +339,7 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
+                "@id": "ct:water"
             },
             "dc:identifier": "bemalingswater",
             "@type": "skos:Concept"
@@ -383,24 +354,40 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/lucht"
+                "@id": "ct:lucht"
             },
             "dc:identifier": "zwevendestof",
             "@type": "skos:Concept"
         },
         {
-            "@id": "file:///tmp/RtmptfZwxL/lucht",
-            "skos:narrower": [
-                {
-                    "@id": "ct:zwevendestof"
-                },
-                {
-                    "@id": "ct:bodemlucht"
-                },
-                {
-                    "@id": "ct:depositie"
-                }
-            ]
+            "@id": "ct:eieren",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Eieren"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:dierlijkmateriaal"
+            },
+            "dc:identifier": "eieren",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:schelpdieren",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Schelpdieren"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:dierlijkmateriaal"
+            },
+            "dc:identifier": "schelpdieren",
+            "@type": "skos:Concept"
         },
         {
             "@id": "ct:sediment",
@@ -412,7 +399,7 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/vastdeelvdaarde"
+                "@id": "ct:vastdeelvdaarde"
             },
             "dc:identifier": "sediment",
             "@type": "skos:Concept"
@@ -427,30 +414,10 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/plantaardigmateriaal"
+                "@id": "ct:plantaardigmateriaal"
             },
             "dc:identifier": "groenten",
             "@type": "skos:Concept"
-        },
-        {
-            "@id": "file:///tmp/RtmptfZwxL/plantaardigmateriaal",
-            "skos:narrower": [
-                {
-                    "@id": "ct:vilt"
-                },
-                {
-                    "@id": "ct:gftafval"
-                },
-                {
-                    "@id": "ct:groenten"
-                },
-                {
-                    "@id": "ct:fruit"
-                },
-                {
-                    "@id": "ct:strooisel"
-                }
-            ]
         },
         {
             "@id": "ct:strooisel",
@@ -462,7 +429,7 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/plantaardigmateriaal"
+                "@id": "ct:plantaardigmateriaal"
             },
             "dc:identifier": "strooisel",
             "@type": "skos:Concept"
@@ -477,7 +444,7 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/plantaardigmateriaal"
+                "@id": "ct:plantaardigmateriaal"
             },
             "dc:identifier": "gftafval",
             "@type": "skos:Concept"
@@ -492,24 +459,132 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/vastdeelvdaarde"
+                "@id": "ct:vastdeelvdaarde"
             },
             "dc:identifier": "bodem",
             "@type": "skos:Concept"
         },
         {
-            "@id": "ct:schelpdieren",
+            "@id": "ct:zeewater",
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Schelpdieren"
+                "@value": "Zeewater"
+            },
+            "skos:narrower": {
+                "@id": "ct:zeeschuim"
             },
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/dierlijkmateriaal"
+                "@id": "ct:water"
             },
-            "dc:identifier": "schelpdieren",
+            "dc:identifier": "zeewater",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:effluent",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Effluent"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:water"
+            },
+            "dc:identifier": "effluent",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:regenwater",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Regenwater"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:water"
+            },
+            "dc:identifier": "regenwater",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:oppervlaktewater",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Oppervlaktewater"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:water"
+            },
+            "dc:identifier": "oppervlaktewater",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:bodemvocht",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Bodemvocht"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:water"
+            },
+            "dc:identifier": "bodemvocht",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:afvalwater",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Afvalwater"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:water"
+            },
+            "dc:identifier": "afvalwater",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:drinkwater",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Drinkwater"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:water"
+            },
+            "dc:identifier": "drinkwater",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:koelwater",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Koelwater"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:water"
+            },
+            "dc:identifier": "koelwater",
             "@type": "skos:Concept"
         },
         {
@@ -522,9 +597,24 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/lucht"
+                "@id": "ct:lucht"
             },
             "dc:identifier": "bodemlucht",
+            "@type": "skos:Concept"
+        },
+        {
+            "@id": "ct:depositie",
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Depositie"
+            },
+            "skos:inScheme": {
+                "@id": "cs:materiaalklasse"
+            },
+            "skos:broader": {
+                "@id": "ct:lucht"
+            },
+            "dc:identifier": "depositie",
             "@type": "skos:Concept"
         },
         {
@@ -537,7 +627,7 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/plantaardigmateriaal"
+                "@id": "ct:plantaardigmateriaal"
             },
             "dc:identifier": "vilt",
             "@type": "skos:Concept"
@@ -552,54 +642,54 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/plantaardigmateriaal"
+                "@id": "ct:plantaardigmateriaal"
             },
             "dc:identifier": "fruit",
             "@type": "skos:Concept"
         },
         {
-            "@id": "ct:eieren",
+            "@id": "ct:puurproduct",
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Eieren"
+                "@value": "Puur product"
             },
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/dierlijkmateriaal"
+                "@id": "ct:antropogeneobjecten"
             },
-            "dc:identifier": "eieren",
+            "dc:identifier": "puurproduct",
             "@type": "skos:Concept"
         },
         {
-            "@id": "ct:effluent",
+            "@id": "ct:lnapl",
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Effluent"
+                "@value": "Drijflaag (LNAPL)"
             },
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
+                "@id": "ct:antropogeneobjecten"
             },
-            "dc:identifier": "effluent",
+            "dc:identifier": "lnapl",
             "@type": "skos:Concept"
         },
         {
-            "@id": "ct:depositie",
+            "@id": "ct:dnapl",
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "Depositie"
+                "@value": "Zaklaag (DNAPL)"
             },
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/lucht"
+                "@id": "ct:antropogeneobjecten"
             },
-            "dc:identifier": "depositie",
+            "dc:identifier": "dnapl",
             "@type": "skos:Concept"
         },
         {
@@ -612,39 +702,9 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/vastdeelvdaarde"
+                "@id": "ct:vastdeelvdaarde"
             },
             "dc:identifier": "hardgesteente",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:regenwater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Regenwater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
-            },
-            "dc:identifier": "regenwater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:koelwater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Koelwater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
-            },
-            "dc:identifier": "koelwater",
             "@type": "skos:Concept"
         },
         {
@@ -657,45 +717,9 @@
                 "@id": "cs:materiaalklasse"
             },
             "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/Zeewater"
+                "@id": "ct:zeewater"
             },
             "dc:identifier": "zeeschuim",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "file:///tmp/RtmptfZwxL/Zeewater",
-            "skos:narrower": {
-                "@id": "ct:zeeschuim"
-            }
-        },
-        {
-            "@id": "ct:afvalwater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Afvalwater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
-            },
-            "dc:identifier": "afvalwater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:bodemvocht",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Bodemvocht"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
-            },
-            "dc:identifier": "bodemvocht",
             "@type": "skos:Concept"
         },
         {
@@ -819,51 +843,6 @@
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
             }
-        },
-        {
-            "@id": "ct:drinkwater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Drinkwater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
-            },
-            "dc:identifier": "drinkwater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:zeewater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Zeewater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
-            },
-            "dc:identifier": "zeewater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:oppervlaktewater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Oppervlaktewater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "file:///tmp/RtmptfZwxL/water"
-            },
-            "dc:identifier": "oppervlaktewater",
-            "@type": "skos:Concept"
         }
     ],
     "@context": {
