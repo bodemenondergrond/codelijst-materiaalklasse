@@ -1,0 +1,39 @@
+"uri","type","dc.id","collection","notation","prefLabel","altLabel","broader","broaderTransitive","broadMatch","changeNote","closeMatch","definition","editorialNote","exactMatch","example","hiddenLabel","historyNote","inScheme","mappingRelation","note","related","relatedMatch","scopeNote","semanticRelation","topConceptOf"
+"colt:materiaalklasses","skos:Collection","materiaalklasses",,,"Collectie van materiaalklasses.",,,,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"cs:materiaalklasse","skos:ConceptScheme","materiaalklasse",,,"Codelijst materiaalklasse.",,,,,,,"Aard van de Bemonstering.",,,,,,,,,,,,,
+"ct:afvalwater","skos:Concept","afvalwater","colt:materiaalklasses",,"Afvalwater",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:antropogeneobjecten","skos:Concept","antropogeneobjecten","colt:materiaalklasses",,"Antropogene objecten",,"materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
+"ct:bemalingswater","skos:Concept","bemalingswater","colt:materiaalklasses",,"Bemalingswater",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:bodem","skos:Concept","bodem","colt:materiaalklasses",,"Bodem",,"vastdeelvdaarde",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:bodemlucht","skos:Concept","bodemlucht","colt:materiaalklasses",,"Bodemlucht",,"lucht",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:bodemvocht","skos:Concept","bodemvocht","colt:materiaalklasses",,"Bodemvocht",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:depositie","skos:Concept","depositie","colt:materiaalklasses",,"Depositie",,"lucht",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:dierlijkmateriaal","skos:Concept","dierlijkmateriaal","colt:materiaalklasses",,"Dierlijk materiaal",,"materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
+"ct:dnapl","skos:Concept","dnapl","colt:materiaalklasses",,"Zaklaag (DNAPL)",,"antropogeneobjecten",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:drinkwater","skos:Concept","drinkwater","colt:materiaalklasses",,"Drinkwater",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:effluent","skos:Concept","effluent","colt:materiaalklasses",,"Effluent",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:eieren","skos:Concept","eieren","colt:materiaalklasses",,"Eieren",,"dierlijkmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:fruit","skos:Concept","fruit","colt:materiaalklasses",,"Fruit",,"plantaardigmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:gftafval","skos:Concept","gftafval","colt:materiaalklasses",,"GFT-afval",,"plantaardigmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:groenten","skos:Concept","groenten","colt:materiaalklasses",,"Groenten",,"plantaardigmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:grondwater","skos:Concept","grondwater","colt:materiaalklasses",,"Grondwater",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:hardgesteente","skos:Concept","hardgesteente","colt:materiaalklasses",,"Hard gesteente",,"vastdeelvdaarde",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:koelwater","skos:Concept","koelwater","colt:materiaalklasses",,"Koelwater",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:lnapl","skos:Concept","lnapl","colt:materiaalklasses",,"Drijflaag (LNAPL)",,"antropogeneobjecten",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:lucht","skos:Concept","lucht","colt:materiaalklasses",,"Lucht",,"materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
+"ct:melk","skos:Concept","melk","colt:materiaalklasses",,"Melk",,"dierlijkmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:migratie","skos:Concept","migratie","colt:materiaalklasses",,"Migratie",,"materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
+"ct:oppervlaktewater","skos:Concept","oppervlaktewater","colt:materiaalklasses",,"Oppervlaktewater",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:plantaardigmateriaal","skos:Concept","plantaardigmateriaal","colt:materiaalklasses",,"Plantaardig materiaal",,"materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
+"ct:puurproduct","skos:Concept","puurproduct","colt:materiaalklasses",,"Puur product",,"antropogeneobjecten",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:regenwater","skos:Concept","regenwater","colt:materiaalklasses",,"Regenwater",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:schelpdieren","skos:Concept","schelpdieren","colt:materiaalklasses",,"Schelpdieren",,"dierlijkmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:sediment","skos:Concept","sediment","colt:materiaalklasses",,"Sediment",,"vastdeelvdaarde",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:strooisel","skos:Concept","strooisel","colt:materiaalklasses",,"Strooisel",,"plantaardigmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:vastdeelvdaarde","skos:Concept","vastdeelvdaarde","colt:materiaalklasses",,"Vaste deel van de aarde",,"materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
+"ct:vilt","skos:Concept","vilt","colt:materiaalklasses",,"Vilt",,"plantaardigmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:water","skos:Concept","water","colt:materiaalklasses",,"Water",,"materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
+"ct:waterbodem","skos:Concept","waterbodem","colt:materiaalklasses",,"Waterbodem",,"vastdeelvdaarde",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:zeeschuim","skos:Concept","zeeschuim","colt:materiaalklasses",,"Zeeschuim",,"Zeewater",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:zeewater","skos:Concept","zeewater","colt:materiaalklasses",,"Zeewater",,"water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
+"ct:zwevendestof","skos:Concept","zwevendestof","colt:materiaalklasses",,"Zwevende stof",,"lucht",,,,,,,,,,,"cs:materiaalklasse",,,,,,,

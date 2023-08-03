@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>be.milieuinfo</groupId>
+    <artifactId>acd-parent</artifactId>
+    <version>1.0.9</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>be.vlaanderen.bodemenondergrond.data.id.graph</groupId> <!-- e.g. be.vlaanderen.bodemenondergrond.data.id.graph -->
+  <artifactId>codelijst-materiaalklasse</artifactId> <!-- e.g. codelijst-testrepo -->
+  <version>0.1.0-SNAPSHOT</version> <!-- 0.1.0-SNAPSHOT -->
+  <packaging>jar</packaging>
+
+  <name>codelijst-materiaalklasse</name> <!-- e.g. codelijst-testrepo -->
+
+
+  <scm>
+        <connection>scm:git:https://github.com/bodemenondergrond/codelijst-materiaalklasse.git</connection>
+        <developerConnection>scm:git:https://github.com/bodemenondergrond/codelijst-materiaalklasse.git</developerConnection>
+        <url>https://github.com/bodemenondergrond/codelijst-materiaalklasse.git</url>
+  </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+          <execution>
+            <id>1</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <classifier>codelijst</classifier>
+              <includes>
+                <include>**/id/conceptscheme/*</include>
+              </includes>
+            </configuration>
+          </execution>
+          <execution>
+            <id>2</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <classifier>metadata</classifier>
+              <includes>
+                <include>**/id/dataset/*</include>
+                <include>**/id/catalog/*</include>
+              </includes>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>none</phase>
+          </execution>
+          <execution>
+            <id>attach-sources-override</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+     </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>false</filtering>
+      </resource>
+    </resources>
+  </build>
+</project>
