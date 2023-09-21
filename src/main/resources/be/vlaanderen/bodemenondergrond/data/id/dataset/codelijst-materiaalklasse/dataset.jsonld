@@ -1,69 +1,111 @@
 {
     "@graph": [
         {
-            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_xsd",
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
-            },
-            "dcterms:rightsHolder": {
-                "@id": "ovo:OVO003751"
-            },
-            "dcterms:format": {
-                "@id": "file_type:XSD"
-            },
-            "@type": "dcat:Distribution",
-            "dcterms:identifier": {
-                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_xsd"
-            },
-            "dcat:mediaType": {
-                "@id": "https://www.iana.org/assignments/media-types/application/xml"
-            },
+            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_xsd",
             "dcat:compressFormat": {
                 "@id": "http://www.iana.org/assignments/media-types/application/gzip"
+            },
+            "dcat:downloadURL": {
+                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse.xsd"
             },
             "dcterms:description": {
                 "@language": "nl",
                 "@value": "Codelijst materiaalklasse, geserialiseerd in een xsd bestand met een enumeratie."
             },
-            "dcat:accessURL": {
-                "@id": "https://github.com/bodemenondergrond/codelijst-materiaalklasse.git"
-            },
             "dcterms:title": {
                 "@language": "nl",
                 "@value": "Codelijst materiaalklasse in xml/xsd formaat."
             },
-            "rdfs:label": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse, in xml xsd-formaat."
-            },
             "dcterms:accessRights": {
                 "@id": "access_right:PUBLIC"
             },
-            "foaf:page": {
-                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.0.materiaalklasse_xsd.html"
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_xsd"
             },
-            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse_xsd",
-            "dcat:downloadURL": {
-                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse.xsd"
+            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse_xsd",
+            "dcterms:format": {
+                "@id": "file_type:XSD"
+            },
+            "dcterms:issued": {
+                "@value": "2023-09-21",
+                "@type": "xsd:date"
+            },
+            "dcat:accessURL": {
+                "@id": "https://github.com/bodemenondergrond/codelijst-materiaalklasse.git"
+            },
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/application/xml"
+            },
+            "@type": "dcat:Distribution",
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "foaf:page": {
+                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.1.materiaalklasse_xsd.html"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse, in xml xsd-formaat."
             }
         },
         {
-            "@id": "omg_dataset:codelijst-materiaalklasse.0.1.0",
+            "@id": "omg_dataset:codelijst-materiaalklasse",
+            "dcterms:hasVersion": {
+                "@id": "omg_dataset:codelijst-materiaalklasse.0.1.1"
+            },
+            "@type": "dcat:Dataset"
+        },
+        {
+            "@id": "omg_dataset:codelijst-materiaalklasse.0.1.1",
+            "dcat:distribution": [
+                {
+                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_jsonld"
+                },
+                {
+                    "@id": "omg_id:package/be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-materiaalklasse.0.1.1"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_xsd"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_rdf"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_ttl"
+                },
+                {
+                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_csv"
+                }
+            ],
+            "dcterms:issued": {
+                "@value": "2023-09-21",
+                "@type": "xsd:date"
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "dc:language": {
+                "@language": "nl",
+                "@value": "nl"
+            },
             "dcat:theme": [
                 {
                     "@id": "datatheme_eu:ENVI"
                 },
                 {
-                    "@id": "datatheme_be:ENVI"
+                    "@id": "gemet:10087"
                 },
                 {
                     "@id": "eurovoc:2407"
                 },
                 {
-                    "@id": "gemet:10087"
+                    "@id": "datatheme_be:ENVI"
                 }
             ],
+            "@type": "dcat:Dataset",
+            "void:rootResource": {
+                "@id": "omg_conceptscheme:materiaalklasse"
+            },
             "dcterms:accessRights": {
                 "@id": "access_right:PUBLIC"
             },
@@ -71,60 +113,16 @@
                 "@language": "nl",
                 "@value": "Dataset codelijst materiaalklasse"
             },
-            "dcat:distribution": [
-                {
-                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_csv"
-                },
-                {
-                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_jsonld"
-                },
-                {
-                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_rdf"
-                },
-                {
-                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_xsd"
-                },
-                {
-                    "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_ttl"
-                },
-                {
-                    "@id": "omg_id:package/be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-materiaalklasse.0.1.0"
-                }
-            ],
-            "foaf:page": {
-                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/dataset/codelijst-materiaalklasse.0.1.0.html"
-            },
-            "dcterms:rightsHolder": {
-                "@id": "ovo:OVO003751"
-            },
-            "@type": "dcat:Dataset",
-            "rdfs:label": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse (0.1.0)"
-            },
-            "dcat:contactPoint": {
-                "@id": "omg_id:vcard/helpdesk"
+            "dcterms:publisher": {
+                "@id": "ovo:OVO003323"
             },
             "dcterms:isVersionOf": {
                 "@id": "omg_dataset:codelijst-materiaalklasse"
             },
-            "dcterms:description": {
-                "@language": "nl",
-                "@value": "Deze dataset bevat een lijst van testconcepten, die gebruikt worden binnen het beleidsdomein bodemenondergrond van de Vlaamse Overheid."
+            "foaf:page": {
+                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/dataset/codelijst-materiaalklasse.0.1.1.html"
             },
-            "dcterms:accrualPeriodicity": {
-                "@id": "frequency:IRREG"
-            },
-            "dcterms:identifier": {
-                "@id": "omg_dataset:codelijst-materiaalklasse.0.1.0"
-            },
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
-            },
-            "dcterms:publisher": {
-                "@id": "ovo:OVO003323"
-            },
+            "owl:versionInfo": "0.1.1",
             "dcterms:spatial": [
                 {
                     "@id": "https://www.geonames.org/3337388/flanders"
@@ -133,20 +131,18 @@
                     "@id": "country:BEL"
                 }
             ],
-            "void:rootResource": {
-                "@id": "omg_conceptscheme:materiaalklasse"
+            "dcterms:identifier": {
+                "@id": "omg_dataset:codelijst-materiaalklasse.0.1.1"
+            },
+            "dcat:landingPage": {
+                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/catalog/codelijst.html"
             },
             "dcterms:language": {
                 "@id": "language:NLD"
             },
-            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.dataset.codelijst-materiaalklasse.0.1.0",
-            "dc:language": {
-                "@language": "nl",
-                "@value": "nl"
-            },
-            "owl:versionInfo": "0.1.0",
-            "dcterms:temporal": {
-                "@id": "omg_id:periodoftime/dataset_omg"
+            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.dataset.codelijst-materiaalklasse.0.1.1",
+            "dcterms:accrualPeriodicity": {
+                "@id": "frequency:IRREG"
             },
             "dcterms:license": {
                 "@id": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0"
@@ -155,220 +151,151 @@
                 "@language": "nl",
                 "@value": "Codelijst materiaalklasse"
             },
-            "dcat:landingPage": {
-                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/catalog/codelijst.html"
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse (0.1.1)"
+            },
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Deze dataset bevat een lijst van testconcepten, die gebruikt worden binnen het beleidsdomein bodemenondergrond van de Vlaamse Overheid."
+            },
+            "dcterms:temporal": {
+                "@id": "omg_id:periodoftime/dataset_omg"
+            },
+            "dcat:contactPoint": {
+                "@id": "omg_id:vcard/helpdesk"
             }
         },
         {
-            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_csv",
-            "dcat:downloadURL": {
-                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse.csv"
+            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_ttl",
+            "dcterms:accessRights": {
+                "@id": "access_right:PUBLIC"
             },
             "dcat:accessURL": {
                 "@id": "https://github.com/bodemenondergrond/codelijst-materiaalklasse.git"
             },
-            "dcterms:rightsHolder": {
-                "@id": "ovo:OVO003751"
-            },
-            "dcat:compressFormat": {
-                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
-            },
-            "dcterms:title": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse in text/csv formaat."
-            },
-            "@type": "dcat:Distribution",
             "dcterms:description": {
                 "@language": "nl",
-                "@value": "Codelijst materiaalklasse, geserialiseerd in csv tabelformaat."
+                "@value": "Codelijst materiaalklasse, geserialiseerd in Turtle bestand."
             },
-            "foaf:page": {
-                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.0.materiaalklasse_csv.html"
-            },
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
-            },
-            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse_csv",
-            "dcat:mediaType": {
-                "@id": "https://www.iana.org/assignments/media-types/text/csv"
-            },
-            "rdfs:label": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse, in text/csv formaat."
-            },
-            "dcterms:format": {
-                "@id": "file_type:CSV"
-            },
-            "dcterms:accessRights": {
-                "@id": "access_right:PUBLIC"
-            },
-            "dcterms:identifier": {
-                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_csv"
-            }
-        },
-        {
-            "@id": "omg_dataset:codelijst-materiaalklasse",
-            "dcterms:hasVersion": {
-                "@id": "omg_dataset:codelijst-materiaalklasse.0.1.0"
-            },
-            "@type": "dcat:Dataset"
-        },
-        {
-            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_jsonld",
-            "dcat:compressFormat": {
-                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
-            },
-            "@type": "dcat:Distribution",
-            "dcterms:title": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse in jsonld rdf-formaat."
-            },
-            "dcat:mediaType": {
-                "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
             },
             "dcat:downloadURL": {
-                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse.jsonld"
-            },
-            "dcterms:description": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse, geserialiseerd in een jsonld bestand."
-            },
-            "dcterms:format": {
-                "@id": "file_type:JSON_LD"
-            },
-            "dcterms:identifier": {
-                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_jsonld"
-            },
-            "rdfs:label": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse, in jsonld rdf-formaat."
-            },
-            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse_jsonld",
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
-            },
-            "dcterms:accessRights": {
-                "@id": "access_right:PUBLIC"
-            },
-            "dcterms:rightsHolder": {
-                "@id": "ovo:OVO003751"
-            },
-            "dcat:accessURL": {
-                "@id": "https://github.com/bodemenondergrond/codelijst-materiaalklasse.git"
-            },
-            "foaf:page": {
-                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.0.materiaalklasse_jsonld.html"
-            }
-        },
-        {
-            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_rdf",
-            "foaf:page": {
-                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.0.materiaalklasse_rdf.html"
-            },
-            "dcterms:rightsHolder": {
-                "@id": "ovo:OVO003751"
-            },
-            "dcterms:format": {
-                "@id": "file_type:RDF_XML"
-            },
-            "dcat:mediaType": {
-                "@id": "https://www.iana.org/assignments/media-types/application/rdf+xml"
-            },
-            "rdfs:label": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse, in xml rdf-formaat."
-            },
-            "dcat:compressFormat": {
-                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
-            },
-            "dcat:accessURL": {
-                "@id": "https://github.com/bodemenondergrond/codelijst-materiaalklasse.git"
-            },
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
-            },
-            "dcterms:description": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse, geserialiseerd in rdf/xml bestand."
-            },
-            "dcterms:identifier": {
-                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_rdf"
-            },
-            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse_rdf",
-            "dcat:downloadURL": {
-                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse.rdf"
-            },
-            "@type": "dcat:Distribution",
-            "dcterms:accessRights": {
-                "@id": "access_right:PUBLIC"
-            },
-            "dcterms:title": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse in xml rdf-formaat."
-            }
-        },
-        {
-            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_ttl",
-            "dcat:compressFormat": {
-                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
-            },
-            "dcterms:identifier": {
-                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.0.materiaalklasse_ttl"
+                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse.ttl"
             },
             "dcterms:title": {
                 "@language": "nl",
                 "@value": "Codelijst materiaalklasse in Turtle rdf-formaat."
             },
             "dcterms:issued": {
-                "@value": "2023-08-03",
+                "@value": "2023-09-21",
                 "@type": "xsd:date"
             },
             "dcterms:format": {
                 "@id": "file_type:RDF_TURTLE"
             },
-            "dcat:accessURL": {
-                "@id": "https://github.com/bodemenondergrond/codelijst-materiaalklasse.git"
-            },
-            "dcterms:rightsHolder": {
-                "@id": "ovo:OVO003751"
-            },
-            "dcterms:description": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse, geserialiseerd in Turtle bestand."
+            "foaf:page": {
+                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.1.materiaalklasse_ttl.html"
             },
             "rdfs:label": {
                 "@language": "nl",
                 "@value": "Codelijst materiaalklasse, in Turtle rdf-formaat."
             },
-            "dcat:downloadURL": {
-                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse.ttl"
+            "dcat:compressFormat": {
+                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
             },
-            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.0.materiaalklasse_ttl",
-            "foaf:page": {
-                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.0.materiaalklasse_ttl.html"
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_ttl"
             },
+            "@type": "dcat:Distribution",
             "dcat:mediaType": {
                 "@id": "https://www.iana.org/assignments/media-types/text/turtle"
             },
-            "@type": "dcat:Distribution",
+            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse_ttl"
+        },
+        {
+            "@id": "omg_catalog:codelijst",
+            "dcat:dataset": {
+                "@id": "omg_dataset:codelijst-materiaalklasse"
+            },
+            "@type": "dcat:Catalog"
+        },
+        {
+            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_jsonld",
+            "dcterms:format": {
+                "@id": "file_type:JSON_LD"
+            },
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse, geserialiseerd in een jsonld bestand."
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_jsonld"
+            },
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse in jsonld rdf-formaat."
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse, in jsonld rdf-formaat."
+            },
             "dcterms:accessRights": {
                 "@id": "access_right:PUBLIC"
+            },
+            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse_jsonld",
+            "dcat:compressFormat": {
+                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
+            },
+            "dcat:downloadURL": {
+                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse.jsonld"
+            },
+            "dcterms:issued": {
+                "@value": "2023-09-21",
+                "@type": "xsd:date"
+            },
+            "@type": "dcat:Distribution",
+            "foaf:page": {
+                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.1.materiaalklasse_jsonld.html"
+            },
+            "dcat:accessURL": {
+                "@id": "https://github.com/bodemenondergrond/codelijst-materiaalklasse.git"
+            },
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/application/ld+json"
             }
         },
         {
-            "@id": "omg_id:package/be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-materiaalklasse.0.1.0",
+            "@id": "omg_id:package/be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-materiaalklasse.0.1.1",
             "dcat:downloadURL": {
-                "@id": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/bodemenondergrond/data/id/graph/codelijst-materiaalklasse/0.1.0/codelijst-materiaalklasse-0.1.0.jar"
+                "@id": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/bodemenondergrond/data/id/graph/codelijst-materiaalklasse/0.1.1/codelijst-materiaalklasse-0.1.1.jar"
+            },
+            "spdx:packageFileName": "codelijst-materiaalklasse-0.1.1.jar",
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse, Jar maven package."
             },
             "spdx:packageName": "be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-materiaalklasse",
+            "dcterms:identifier": {
+                "@id": "omg_id:package/be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-materiaalklasse.0.1.1"
+            },
             "spdx:downloadLocation": {
-                "@id": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/bodemenondergrond/data/id/graph/codelijst-materiaalklasse/0.1.0/codelijst-materiaalklasse-0.1.0.jar"
+                "@id": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/bodemenondergrond/data/id/graph/codelijst-materiaalklasse/0.1.1/codelijst-materiaalklasse-0.1.1.jar"
             },
             "dcterms:format": {
                 "@id": "file_type:JAR"
+            },
+            "@type": [
+                "spdx:Package",
+                "dcat:Distribution"
+            ],
+            "dcterms:issued": {
+                "@value": "2023-09-21",
+                "@type": "xsd:date"
             },
             "rdfs:label": {
                 "@language": "nl",
@@ -378,37 +305,110 @@
                 "@language": "nl",
                 "@value": "Codelijst materiaalklasse in jar-formaat."
             },
-            "spdx:versionInfo": "0.1.0",
-            "dcterms:issued": {
-                "@value": "2023-08-03",
-                "@type": "xsd:date"
-            },
-            "@type": [
-                "spdx:Package",
-                "dcat:Distribution"
-            ],
             "dcterms:accessRights": {
                 "@id": "access_right:PUBLIC"
             },
-            "dcterms:description": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse, Jar maven package."
-            },
-            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-materiaalklasse.0.1.0",
-            "spdx:packageFileName": "codelijst-materiaalklasse-0.1.0.jar",
+            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-materiaalklasse.0.1.1",
+            "spdx:versionInfo": "0.1.1",
             "dcterms:rightsHolder": {
                 "@id": "ovo:OVO003751"
-            },
-            "dcterms:identifier": {
-                "@id": "omg_id:package/be.vlaanderen.bodemenondergrond.data.id.graph.codelijst-materiaalklasse.0.1.0"
             }
         },
         {
-            "@id": "omg_catalog:codelijst",
-            "dcat:dataset": {
-                "@id": "omg_dataset:codelijst-materiaalklasse"
+            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_rdf",
+            "@type": "dcat:Distribution",
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/application/rdf+xml"
             },
-            "@type": "dcat:Catalog"
+            "foaf:page": {
+                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.1.materiaalklasse_rdf.html"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse, in xml rdf-formaat."
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "dcat:downloadURL": {
+                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse.rdf"
+            },
+            "dcterms:accessRights": {
+                "@id": "access_right:PUBLIC"
+            },
+            "dcterms:issued": {
+                "@value": "2023-09-21",
+                "@type": "xsd:date"
+            },
+            "dcterms:format": {
+                "@id": "file_type:RDF_XML"
+            },
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse in xml rdf-formaat."
+            },
+            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse_rdf",
+            "dcat:compressFormat": {
+                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
+            },
+            "dcat:accessURL": {
+                "@id": "https://github.com/bodemenondergrond/codelijst-materiaalklasse.git"
+            },
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_rdf"
+            },
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse, geserialiseerd in rdf/xml bestand."
+            }
+        },
+        {
+            "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_csv",
+            "dcat:compressFormat": {
+                "@id": "http://www.iana.org/assignments/media-types/application/gzip"
+            },
+            "dcat:downloadURL": {
+                "@id": "https://datasets.bodemenondergrond.vlaanderen.be/be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse.csv"
+            },
+            "@type": "dcat:Distribution",
+            "dcat:accessURL": {
+                "@id": "https://github.com/bodemenondergrond/codelijst-materiaalklasse.git"
+            },
+            "dcterms:issued": {
+                "@value": "2023-09-21",
+                "@type": "xsd:date"
+            },
+            "foaf:page": {
+                "@id": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/codelijst-materiaalklasse.0.1.1.materiaalklasse_csv.html"
+            },
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse in text/csv formaat."
+            },
+            "dc:identifier": "be.vlaanderen.bodemenondergrond.data.id.distribution.codelijst-materiaalklasse.0.1.1.materiaalklasse_csv",
+            "dcat:mediaType": {
+                "@id": "https://www.iana.org/assignments/media-types/text/csv"
+            },
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse, geserialiseerd in csv tabelformaat."
+            },
+            "dcterms:accessRights": {
+                "@id": "access_right:PUBLIC"
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "dcterms:format": {
+                "@id": "file_type:CSV"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Codelijst materiaalklasse, in text/csv formaat."
+            },
+            "dcterms:identifier": {
+                "@id": "omg_distribution:codelijst-materiaalklasse.0.1.1.materiaalklasse_csv"
+            }
         }
     ],
     "@context": {
