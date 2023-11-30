@@ -1,39 +1,39 @@
-type;uri;dc.id;collection;notation;prefLabel;altLabel;broader;broaderTransitive;broadMatch;changeNote;closeMatch;definition;editorialNote;exactMatch;example;hiddenLabel;historyNote;inScheme;mappingRelation;note;related;relatedMatch;scopeNote;semanticRelation;topConceptOf
-skos:ConceptScheme;cs:materiaalklasse;materiaalklasse;;;Codelijst materiaalklasse.;;;;;;;Aard van de Bemonstering.;;;;;;;;;;;;;
-skos:Collection;colt:materiaalklasses;materiaalklasses;;;Collectie van materiaalklasses.;;;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:puurproduct;puurproduct;colt:materiaalklasses;;Puur product;;ct:antropogeneobjecten;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:oppervlaktewater;oppervlaktewater;colt:materiaalklasses;;Oppervlaktewater;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:drinkwater;drinkwater;colt:materiaalklasses;;Drinkwater;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:zwevendestof;zwevendestof;colt:materiaalklasses;;Zwevende stof;;ct:lucht;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:bodemlucht;bodemlucht;colt:materiaalklasses;;Bodemlucht;;ct:lucht;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:vastdeelvdaarde;vastdeelvdaarde;colt:materiaalklasses;;Vaste deel van de aarde;;ct:materiaalklasse;;;;;;;;;;;cs:materiaalklasse;;;;;;;cs:materiaalklasse
-skos:Concept;ct:grondwater;grondwater;colt:materiaalklasses;;Grondwater;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:vilt;vilt;colt:materiaalklasses;;Vilt;;ct:plantaardigmateriaal;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:antropogeneobjecten;antropogeneobjecten;colt:materiaalklasses;;Antropogene objecten;;ct:materiaalklasse;;;;;;;;;;;cs:materiaalklasse;;;;;;;cs:materiaalklasse
-skos:Concept;ct:bemalingswater;bemalingswater;colt:materiaalklasses;;Bemalingswater;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:depositie;depositie;colt:materiaalklasses;;Depositie;;ct:lucht;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:hardgesteente;hardgesteente;colt:materiaalklasses;;Hard gesteente;;ct:vastdeelvdaarde;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:koelwater;koelwater;colt:materiaalklasses;;Koelwater;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:bodem;bodem;colt:materiaalklasses;;Bodem;;ct:vastdeelvdaarde;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:zeewater;zeewater;colt:materiaalklasses;;Zeewater;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:lnapl;lnapl;colt:materiaalklasses;;Drijflaag (LNAPL);;ct:antropogeneobjecten;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:effluent;effluent;colt:materiaalklasses;;Effluent;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:gftafval;gftafval;colt:materiaalklasses;;GFT-afval;;ct:plantaardigmateriaal;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:eieren;eieren;colt:materiaalklasses;;Eieren;;ct:dierlijkmateriaal;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:groenten;groenten;colt:materiaalklasses;;Groenten;;ct:plantaardigmateriaal;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:water;water;colt:materiaalklasses;;Water;;ct:materiaalklasse;;;;;;;;;;;cs:materiaalklasse;;;;;;;cs:materiaalklasse
-skos:Concept;ct:schelpdieren;schelpdieren;colt:materiaalklasses;;Schelpdieren;;ct:dierlijkmateriaal;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:dnapl;dnapl;colt:materiaalklasses;;Zaklaag (DNAPL);;ct:antropogeneobjecten;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:sediment;sediment;colt:materiaalklasses;;Sediment;;ct:vastdeelvdaarde;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:regenwater;regenwater;colt:materiaalklasses;;Regenwater;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:waterbodem;waterbodem;colt:materiaalklasses;;Waterbodem;;ct:vastdeelvdaarde;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:fruit;fruit;colt:materiaalklasses;;Fruit;;ct:plantaardigmateriaal;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:dierlijkmateriaal;dierlijkmateriaal;colt:materiaalklasses;;Dierlijk materiaal;;ct:materiaalklasse;;;;;;;;;;;cs:materiaalklasse;;;;;;;cs:materiaalklasse
-skos:Concept;ct:melk;melk;colt:materiaalklasses;;Melk;;ct:dierlijkmateriaal;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:plantaardigmateriaal;plantaardigmateriaal;colt:materiaalklasses;;Plantaardig materiaal;;ct:materiaalklasse;;;;;;;;;;;cs:materiaalklasse;;;;;;;cs:materiaalklasse
-skos:Concept;ct:zeeschuim;zeeschuim;colt:materiaalklasses;;Zeeschuim;;ct:zeewater;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:strooisel;strooisel;colt:materiaalklasses;;Strooisel;;ct:plantaardigmateriaal;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:migratie;migratie;colt:materiaalklasses;;Migratie;;ct:materiaalklasse;;;;;;;;;;;cs:materiaalklasse;;;;;;;cs:materiaalklasse
-skos:Concept;ct:lucht;lucht;colt:materiaalklasses;;Lucht;;ct:materiaalklasse;;;;;;;;;;;cs:materiaalklasse;;;;;;;cs:materiaalklasse
-skos:Concept;ct:bodemvocht;bodemvocht;colt:materiaalklasses;;Bodemvocht;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
-skos:Concept;ct:afvalwater;afvalwater;colt:materiaalklasses;;Afvalwater;;ct:water;;;;;;;;;;;cs:materiaalklasse;;;;;;;
+type,uri,dc.id,collection,notation,prefLabel,altLabel,broader,broaderTransitive,broadMatch,changeNote,closeMatch,definition,editorialNote,exactMatch,example,hiddenLabel,historyNote,inScheme,mappingRelation,note,related,relatedMatch,scopeNote,semanticRelation,topConceptOf
+skos:ConceptScheme,cs:materiaalklasse,materiaalklasse,,,Codelijst materiaalklasse.,,,,,,,Aard van de Bemonstering.,,,,,,,,,,,,,
+skos:Collection,colt:materiaalklasses,materiaalklasses,,,Collectie van materiaalklasses.,,,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:puurproduct,puurproduct,colt:materiaalklasses,,Puur product,,ct:antropogeneobjecten,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:oppervlaktewater,oppervlaktewater,colt:materiaalklasses,,Oppervlaktewater,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:drinkwater,drinkwater,colt:materiaalklasses,,Drinkwater,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:zwevendestof,zwevendestof,colt:materiaalklasses,,Zwevende stof,,ct:lucht,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:bodemlucht,bodemlucht,colt:materiaalklasses,,Bodemlucht,,ct:lucht,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:vastdeelvdaarde,vastdeelvdaarde,colt:materiaalklasses,,Vaste deel van de aarde,,ct:materiaalklasse,,,,,,,,,,,cs:materiaalklasse,,,,,,,cs:materiaalklasse
+skos:Concept,ct:grondwater,grondwater,colt:materiaalklasses,,Grondwater,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:vilt,vilt,colt:materiaalklasses,,Vilt,,ct:plantaardigmateriaal,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:antropogeneobjecten,antropogeneobjecten,colt:materiaalklasses,,Antropogene objecten,,ct:materiaalklasse,,,,,,,,,,,cs:materiaalklasse,,,,,,,cs:materiaalklasse
+skos:Concept,ct:bemalingswater,bemalingswater,colt:materiaalklasses,,Bemalingswater,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:depositie,depositie,colt:materiaalklasses,,Depositie,,ct:lucht,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:hardgesteente,hardgesteente,colt:materiaalklasses,,Hard gesteente,,ct:vastdeelvdaarde,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:koelwater,koelwater,colt:materiaalklasses,,Koelwater,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:bodem,bodem,colt:materiaalklasses,,Bodem,,ct:vastdeelvdaarde,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:zeewater,zeewater,colt:materiaalklasses,,Zeewater,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:lnapl,lnapl,colt:materiaalklasses,,Drijflaag (LNAPL),,ct:antropogeneobjecten,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:effluent,effluent,colt:materiaalklasses,,Effluent,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:gftafval,gftafval,colt:materiaalklasses,,GFT-afval,,ct:plantaardigmateriaal,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:eieren,eieren,colt:materiaalklasses,,Eieren,,ct:dierlijkmateriaal,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:groenten,groenten,colt:materiaalklasses,,Groenten,,ct:plantaardigmateriaal,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:water,water,colt:materiaalklasses,,Water,,ct:materiaalklasse,,,,,,,,,,,cs:materiaalklasse,,,,,,,cs:materiaalklasse
+skos:Concept,ct:schelpdieren,schelpdieren,colt:materiaalklasses,,Schelpdieren,,ct:dierlijkmateriaal,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:dnapl,dnapl,colt:materiaalklasses,,Zaklaag (DNAPL),,ct:antropogeneobjecten,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:sediment,sediment,colt:materiaalklasses,,Sediment,,ct:vastdeelvdaarde,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:regenwater,regenwater,colt:materiaalklasses,,Regenwater,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:waterbodem,waterbodem,colt:materiaalklasses,,Waterbodem,,ct:vastdeelvdaarde,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:fruit,fruit,colt:materiaalklasses,,Fruit,,ct:plantaardigmateriaal,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:dierlijkmateriaal,dierlijkmateriaal,colt:materiaalklasses,,Dierlijk materiaal,,ct:materiaalklasse,,,,,,,,,,,cs:materiaalklasse,,,,,,,cs:materiaalklasse
+skos:Concept,ct:melk,melk,colt:materiaalklasses,,Melk,,ct:dierlijkmateriaal,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:plantaardigmateriaal,plantaardigmateriaal,colt:materiaalklasses,,Plantaardig materiaal,,ct:materiaalklasse,,,,,,,,,,,cs:materiaalklasse,,,,,,,cs:materiaalklasse
+skos:Concept,ct:zeeschuim,zeeschuim,colt:materiaalklasses,,Zeeschuim,,ct:zeewater,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:strooisel,strooisel,colt:materiaalklasses,,Strooisel,,ct:plantaardigmateriaal,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:migratie,migratie,colt:materiaalklasses,,Migratie,,ct:materiaalklasse,,,,,,,,,,,cs:materiaalklasse,,,,,,,cs:materiaalklasse
+skos:Concept,ct:lucht,lucht,colt:materiaalklasses,,Lucht,,ct:materiaalklasse,,,,,,,,,,,cs:materiaalklasse,,,,,,,cs:materiaalklasse
+skos:Concept,ct:bodemvocht,bodemvocht,colt:materiaalklasses,,Bodemvocht,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
+skos:Concept,ct:afvalwater,afvalwater,colt:materiaalklasses,,Afvalwater,,ct:water,,,,,,,,,,,cs:materiaalklasse,,,,,,,
