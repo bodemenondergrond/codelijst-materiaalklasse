@@ -53,10 +53,6 @@
         },
         {
             "@id": "ct:water",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "ct:water"
-            },
             "@type": "skos:Concept",
             "skos:narrower": [
                 {
@@ -96,6 +92,10 @@
             },
             "skos:topConceptOf": {
                 "@id": "cs:materiaalklasse"
+            },
+            "skos:prefLabel": {
+                "@language": "nl",
+                "@value": "Water"
             },
             "skos:inScheme": {
                 "@id": "cs:materiaalklasse"
@@ -277,7 +277,7 @@
             },
             "skos:prefLabel": {
                 "@language": "nl",
-                "@value": "ct:lucht"
+                "@value": "Lucht"
             },
             "skos:narrower": [
                 {

@@ -23,7 +23,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water">
-    <skos:prefLabel xml:lang="nl">ct:water</skos:prefLabel>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:narrower rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeewater"/>
     <dc:identifier>water</dc:identifier>
@@ -36,6 +35,7 @@
     <skos:narrower rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemvocht"/>
     <skos:narrower rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/afvalwater"/>
     <skos:narrower rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/drinkwater"/>
+    <skos:prefLabel xml:lang="nl">Water</skos:prefLabel>
     <skos:inScheme rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"/>
     <skos:narrower rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/koelwater"/>
     <skos:narrower rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/grondwater"/>
@@ -241,7 +241,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht">
     <skos:topConceptOf rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"/>
-    <skos:prefLabel xml:lang="nl">ct:lucht</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">Lucht</skos:prefLabel>
     <skos:narrower rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zwevendestof"/>
     <skos:narrower rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemlucht"/>
     <skos:narrower rdf:resource="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/depositie"/>

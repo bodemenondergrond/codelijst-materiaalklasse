@@ -20,7 +20,7 @@
 "ct:hardgesteente","skos:Concept","hardgesteente","colt:materiaalklasses",,"Hard gesteente",,"ct:vastdeelvdaarde",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
 "ct:koelwater","skos:Concept","koelwater","colt:materiaalklasses",,"Koelwater",,"ct:water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
 "ct:lnapl","skos:Concept","lnapl","colt:materiaalklasses",,"Drijflaag (LNAPL)",,"ct:antropogeneobjecten",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
-"ct:lucht","skos:Concept","lucht","colt:materiaalklasses",,"ct:lucht",,"ct:materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
+"ct:lucht","skos:Concept","lucht","colt:materiaalklasses",,"Lucht",,"ct:materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
 "ct:melk","skos:Concept","melk","colt:materiaalklasses",,"Melk",,"ct:dierlijkmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
 "ct:migratie","skos:Concept","migratie","colt:materiaalklasses",,"Migratie",,"ct:materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
 "ct:oppervlaktewater","skos:Concept","oppervlaktewater","colt:materiaalklasses",,"Oppervlaktewater",,"ct:water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
@@ -32,7 +32,7 @@
 "ct:strooisel","skos:Concept","strooisel","colt:materiaalklasses",,"Strooisel",,"ct:plantaardigmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
 "ct:vastdeelvdaarde","skos:Concept","vastdeelvdaarde","colt:materiaalklasses",,"Vaste deel van de aarde",,"ct:materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
 "ct:vilt","skos:Concept","vilt","colt:materiaalklasses",,"Vilt",,"ct:plantaardigmateriaal",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
-"ct:water","skos:Concept","water","colt:materiaalklasses",,"ct:water",,"ct:materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
+"ct:water","skos:Concept","water","colt:materiaalklasses",,"Water",,"ct:materiaalklasse",,,,,,,,,,,"cs:materiaalklasse",,,,,,,"cs:materiaalklasse"
 "ct:waterbodem","skos:Concept","waterbodem","colt:materiaalklasses",,"Waterbodem",,"ct:vastdeelvdaarde",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
 "ct:zeeschuim","skos:Concept","zeeschuim","colt:materiaalklasses",,"Zeeschuim",,"ct:zeewater",,,,,,,,,,,"cs:materiaalklasse",,,,,,,
 "ct:zeewater","skos:Concept","zeewater","colt:materiaalklasses",,"Zeewater",,"ct:water",,,,,,,,,,,"cs:materiaalklasse",,,,,,,

@@ -96,7 +96,7 @@ ct:water  rdf:type         skos:Concept ;
         skos:broader       ct:materiaalklasse ;
         skos:inScheme      cs:materiaalklasse ;
         skos:narrower      ct:zeewater , ct:bemalingswater , ct:effluent , ct:regenwater , ct:oppervlaktewater , ct:bodemvocht , ct:afvalwater , ct:drinkwater , ct:koelwater , ct:grondwater ;
-        skos:prefLabel     "ct:water"@nl ;
+        skos:prefLabel     "Water"@nl ;
         skos:topConceptOf  cs:materiaalklasse .
 
 ct:bodemlucht  rdf:type  skos:Concept ;
@@ -110,7 +110,7 @@ ct:lucht  rdf:type         skos:Concept ;
         skos:broader       ct:materiaalklasse ;
         skos:inScheme      cs:materiaalklasse ;
         skos:narrower      ct:depositie , ct:bodemlucht , ct:zwevendestof ;
-        skos:prefLabel     "ct:lucht"@nl ;
+        skos:prefLabel     "Lucht"@nl ;
         skos:topConceptOf  cs:materiaalklasse .
 
 ct:vilt  rdf:type       skos:Concept ;
