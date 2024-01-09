@@ -9,6 +9,7 @@
     
     <xsl:template match="/">
         <xs:schema>
+            <xsl:attribute name="targetNamespace">http://<xsl:value-of select="rdf:RDF/rdf:Description[./rdf:type/@rdf:resource='http://www.w3.org/2004/02/skos/core#ConceptScheme']/dc:identifier" />.bodemenondergrond.dov.vlaanderen.be</xsl:attribute>                  
             <xs:simpleType >
                 <xsl:attribute name="name">
                     <xsl:value-of select="rdf:RDF/rdf:Description[./rdf:type/@rdf:resource='http://www.w3.org/2004/02/skos/core#ConceptScheme']/dc:identifier" />
