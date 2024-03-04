@@ -71,7 +71,7 @@
                     <addClasspath>true</addClasspath>
                 </manifest>
                 <manifestEntries>
-                    <Publish-Url>https://github.com/bodemenondergrond/codelijst-materiaalklasse</Publish-Url>
+                    <Publish-Url>https://github.com/bodemenondergrond/${project.artifactId}</Publish-Url>
                     <Implementation-Build>${project.version}</Implementation-Build>
                 </manifestEntries>
               </archive>              
