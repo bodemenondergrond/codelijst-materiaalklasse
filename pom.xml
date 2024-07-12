@@ -7,13 +7,12 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>be.vlaanderen.bodemenondergrond.data.id.graph</groupId> <!-- e.g. be.vlaanderen.bodemenondergrond.data.id.graph -->
-  <artifactId>codelijst-materiaalklasse</artifactId> <!-- e.g. codelijst-testrepo -->
-  <version>0.1.1-SNAPSHOT</version> <!-- 0.1.0-SNAPSHOT -->
+  <groupId>be.vlaanderen.bodemenondergrond.data.id.graph</groupId>
+  <artifactId>codelijst-materiaalklasse</artifactId>
+  <version>0.2.0-SNAPSHOT</version> 
   <packaging>jar</packaging>
 
-  <name>codelijst-materiaalklasse</name> <!-- e.g. codelijst-testrepo -->
-
+  <name>codelijst-materiaalklasse</name>
 
   <scm>
         <connection>scm:git:https://github.com/bodemenondergrond/codelijst-materiaalklasse.git</connection>
@@ -37,7 +36,7 @@
             <configuration>
               <classifier>codelijst</classifier>
               <includes>
-                <include>**/id/conceptscheme/*</include>
+                <include>**/id/conceptscheme/**</include>
               </includes>
             </configuration>
           </execution>
@@ -50,8 +49,8 @@
             <configuration>
               <classifier>metadata</classifier>
               <includes>
-                <include>**/id/dataset/*</include>
-                <include>**/id/catalog/*</include>
+                <include>**/id/dataset/**</include>
+                <include>**/id/catalog/**</include>
               </includes>
             </configuration>
           </execution>
@@ -95,7 +94,7 @@
             </goals>
           </execution>
         </executions>
-     </plugin>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
@@ -103,29 +102,40 @@
         <configuration>
           <encoding>UTF-8</encoding>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.github.eirslett</groupId>
+        <artifactId>frontend-maven-plugin</artifactId>
+        <version>1.15.0</version>
         <executions>
           <execution>
-            <id>1</id>
+            <id>install node and npm</id>
             <goals>
-              <goal>resources</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>copy-resources</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>copy-resources</goal>
+              <goal>install-node-and-npm</goal>
             </goals>
             <configuration>
-              <outputDirectory>${basedir}/target/classes/xsd</outputDirectory>
-                <resources>
-                    <resource>
-                        <directory>${basedir}/src/main/resources</directory>
-                        <includes>
-                            <include>**/*.xsd</include>
-                        </includes>
-                    </resource>
-                </resources>          
+              <nodeVersion>v18.12.1</nodeVersion>
+              <npmVersion>9.1.3</npmVersion>
+              <installDirectory>target/</installDirectory>
+            </configuration>
+          </execution>
+          <execution>
+            <id>npm install</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <installDirectory>target/</installDirectory>
+            </configuration>
+          </execution>
+          <execution>
+            <id>create metadata</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>run create_metadata</arguments>
+              <installDirectory>target/</installDirectory>
             </configuration>
           </execution>
         </executions>
@@ -134,6 +144,10 @@
     <resources>
       <resource>
         <directory>src/main/resources</directory>
+        <filtering>false</filtering>
+      </resource>
+      <resource>
+        <directory>temp</directory>
         <filtering>false</filtering>
       </resource>
     </resources>

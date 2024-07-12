@@ -1,256 +1,392 @@
-@prefix colt: <https://data.bodemenondergrond.vlaanderen.be/id/collection/materiaalklasse/> .
-@prefix cs:   <https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/> .
-@prefix ct:   <https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/> .
-@prefix dc:   <http://purl.org/dc/elements/1.1/> .
-@prefix dct:  <http://purl.org/dc/terms/> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix concept: <https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/>.
+@prefix collectie: <https://data.bodemenondergrond.vlaanderen.be/id/collection/materiaalklasse/>.
+@prefix access_right: <http://publications.europa.eu/resource/authority/access-right/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix assettype: <http://purl.org/adms/assettype/>.
+@prefix conceptscheme: <https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/>.
+@prefix country: <http://publications.europa.eu/resource/authority/country/>.
+@prefix datasets: <https://datasets.bodemenondergrond.vlaanderen.be/>.
+@prefix datatheme_be: <http://vocab.belgif.be/auth/datatheme/>.
+@prefix datatheme_eu: <http://publications.europa.eu/resource/authority/data-theme/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix eurovoc: <http://eurovoc.europa.eu/>.
+@prefix file_type: <http://publications.europa.eu/resource/authority/file-type/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix formats: <http://www.w3.org/ns/formats/>.
+@prefix frequency: <http://publications.europa.eu/resource/authority/frequency/>.
+@prefix gemet: <http://www.eionet.europa.eu/gemet/concept/>.
+@prefix licence: <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/>.
+@prefix metadata: <https://data.bodemenondergrond.vlaanderen.be/ns/metadata#>.
+@prefix omg_catalog: <https://data.bodemenondergrond.vlaanderen.be/id/catalog/>.
+@prefix omg_catalog_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/catalog/>.
+@prefix omg_collection: <https://data.bodemenondergrond.vlaanderen.be/id/collection/>.
+@prefix omg_dataservice: <https://data.bodemenondergrond.vlaanderen.be/id/dataservice/>.
+@prefix omg_dataset_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/dataset/>.
+@prefix omg_dataset: <https://data.bodemenondergrond.vlaanderen.be/id/dataset/>.
+@prefix omg_distribution_doc: <https://data.bodemenondergrond.vlaanderen.be/doc/distribution/>.
+@prefix omg_distribution: <https://data.bodemenondergrond.vlaanderen.be/id/distribution/>.
+@prefix omg_graphcollection: <https://data.bodemenondergrond.vlaanderen.be/id/graphcollection/>.
+@prefix omg_graph: <https://data.bodemenondergrond.vlaanderen.be/id/graph/>.
+@prefix omg_id: <https://data.bodemenondergrond.vlaanderen.be/id/>.
+@prefix omg_named_graph: <https://data.bodemenondergrond.vlaanderen.be/id/namedgraph/>.
+@prefix omg_ontology: <https://data.bodemenondergrond.vlaanderen.be/id/ontology/>.
+@prefix omg_package: <https://data.bodemenondergrond.vlaanderen.be/id/package/>.
+@prefix omg_periodoftime: <https://data.bodemenondergrond.vlaanderen.be/id/periodoftime/>.
+@prefix omg_service: <https://data.bodemenondergrond.vlaanderen.be/id/service/>.
+@prefix omg_vcard: <https://data.bodemenondergrond.vlaanderen.be/id/vcard/>.
+@prefix ovo: <http://data.vlaanderen.be/id/organisatie/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix repo: <https://repo.omgeving.vlaanderen.be/artifactory/release/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix spdx: <http://spdx.org/rdf/terms#>.
+@prefix ssd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix ts: <http://www.w3.org/ns/formats/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix wise: <http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/>.
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-ct:grondwater  rdf:type  skos:Concept ;
-        dc:identifier   "grondwater" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Grondwater"@nl .
-
-ct:migratie  rdf:type      skos:Concept ;
-        dc:identifier      "migratie" ;
-        skos:broader       ct:materiaalklasse ;
-        skos:inScheme      cs:materiaalklasse ;
-        skos:prefLabel     "Migratie"@nl ;
-        skos:topConceptOf  cs:materiaalklasse .
-
-ct:materiaalklasse  skos:narrower  ct:lucht , ct:migratie , ct:plantaardigmateriaal , ct:dierlijkmateriaal , ct:water , ct:antropogeneobjecten , ct:vastdeelvdaarde .
-
-ct:melk  rdf:type       skos:Concept ;
-        dc:identifier   "melk" ;
-        skos:broader    ct:dierlijkmateriaal ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Melk"@nl .
-
-ct:waterbodem  rdf:type  skos:Concept ;
-        dc:identifier   "waterbodem" ;
-        skos:broader    ct:vastdeelvdaarde ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Waterbodem"@nl .
-
-ct:bemalingswater  rdf:type  skos:Concept ;
-        dc:identifier   "bemalingswater" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Bemalingswater"@nl .
-
-ct:zwevendestof  rdf:type  skos:Concept ;
-        dc:identifier   "zwevendestof" ;
-        skos:broader    ct:lucht ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Zwevende stof"@nl .
-
-ct:dierlijkmateriaal  rdf:type  skos:Concept ;
-        dc:identifier      "dierlijkmateriaal" ;
-        skos:broader       ct:materiaalklasse ;
-        skos:inScheme      cs:materiaalklasse ;
-        skos:narrower      ct:melk , ct:schelpdieren , ct:eieren ;
-        skos:prefLabel     "Dierlijk materiaal"@nl ;
-        skos:topConceptOf  cs:materiaalklasse .
-
-ct:sediment  rdf:type   skos:Concept ;
-        dc:identifier   "sediment" ;
-        skos:broader    ct:vastdeelvdaarde ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Sediment"@nl .
-
-ct:groenten  rdf:type   skos:Concept ;
-        dc:identifier   "groenten" ;
-        skos:broader    ct:plantaardigmateriaal ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Groenten"@nl .
-
-ct:strooisel  rdf:type  skos:Concept ;
-        dc:identifier   "strooisel" ;
-        skos:broader    ct:plantaardigmateriaal ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Strooisel"@nl .
-
-ct:gftafval  rdf:type   skos:Concept ;
-        dc:identifier   "gftafval" ;
-        skos:broader    ct:plantaardigmateriaal ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "GFT-afval"@nl .
-
-ct:bodem  rdf:type      skos:Concept ;
-        dc:identifier   "bodem" ;
-        skos:broader    ct:vastdeelvdaarde ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Bodem"@nl .
-
-ct:schelpdieren  rdf:type  skos:Concept ;
-        dc:identifier   "schelpdieren" ;
-        skos:broader    ct:dierlijkmateriaal ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Schelpdieren"@nl .
-
-ct:water  rdf:type         skos:Concept ;
-        dc:identifier      "water" ;
-        skos:broader       ct:materiaalklasse ;
-        skos:inScheme      cs:materiaalklasse ;
-        skos:narrower      ct:zeewater , ct:bemalingswater , ct:effluent , ct:regenwater , ct:oppervlaktewater , ct:bodemvocht , ct:afvalwater , ct:drinkwater , ct:koelwater , ct:grondwater ;
-        skos:prefLabel     "Water"@nl ;
-        skos:topConceptOf  cs:materiaalklasse .
-
-ct:bodemlucht  rdf:type  skos:Concept ;
-        dc:identifier   "bodemlucht" ;
-        skos:broader    ct:lucht ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Bodemlucht"@nl .
-
-ct:lucht  rdf:type         skos:Concept ;
-        dc:identifier      "lucht" ;
-        skos:broader       ct:materiaalklasse ;
-        skos:inScheme      cs:materiaalklasse ;
-        skos:narrower      ct:depositie , ct:bodemlucht , ct:zwevendestof ;
-        skos:prefLabel     "Lucht"@nl ;
-        skos:topConceptOf  cs:materiaalklasse .
-
-ct:vilt  rdf:type       skos:Concept ;
-        dc:identifier   "vilt" ;
-        skos:broader    ct:plantaardigmateriaal ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Vilt"@nl .
-
-ct:fruit  rdf:type      skos:Concept ;
-        dc:identifier   "fruit" ;
-        skos:broader    ct:plantaardigmateriaal ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Fruit"@nl .
-
-cs:materiaalklasse  rdf:type  skos:ConceptScheme ;
-        dc:identifier       "materiaalklasse" ;
-        skos:definition     "Aard van de Bemonstering."@nl ;
-        skos:hasTopConcept  ct:plantaardigmateriaal , ct:migratie , ct:vastdeelvdaarde , ct:lucht , ct:antropogeneobjecten , ct:water , ct:dierlijkmateriaal ;
-        skos:prefLabel      "Codelijst materiaalklasse."@nl .
-
-ct:effluent  rdf:type   skos:Concept ;
-        dc:identifier   "effluent" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Effluent"@nl .
-
-ct:eieren  rdf:type     skos:Concept ;
-        dc:identifier   "eieren" ;
-        skos:broader    ct:dierlijkmateriaal ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Eieren"@nl .
-
-ct:antropogeneobjecten
-        rdf:type           skos:Concept ;
-        dc:identifier      "antropogeneobjecten" ;
-        skos:broader       ct:materiaalklasse ;
-        skos:inScheme      cs:materiaalklasse ;
-        skos:narrower      ct:dnapl , ct:lnapl , ct:puurproduct ;
-        skos:prefLabel     "Antropogene objecten"@nl ;
-        skos:topConceptOf  cs:materiaalklasse .
-
-ct:depositie  rdf:type  skos:Concept ;
-        dc:identifier   "depositie" ;
-        skos:broader    ct:lucht ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Depositie"@nl .
-
-ct:hardgesteente  rdf:type  skos:Concept ;
-        dc:identifier   "hardgesteente" ;
-        skos:broader    ct:vastdeelvdaarde ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Hard gesteente"@nl .
-
-ct:regenwater  rdf:type  skos:Concept ;
-        dc:identifier   "regenwater" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Regenwater"@nl .
-
-ct:koelwater  rdf:type  skos:Concept ;
-        dc:identifier   "koelwater" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Koelwater"@nl .
-
-ct:plantaardigmateriaal
-        rdf:type           skos:Concept ;
-        dc:identifier      "plantaardigmateriaal" ;
-        skos:broader       ct:materiaalklasse ;
-        skos:inScheme      cs:materiaalklasse ;
-        skos:narrower      ct:vilt , ct:strooisel , ct:groenten , ct:gftafval , ct:fruit ;
-        skos:prefLabel     "Plantaardig materiaal"@nl ;
-        skos:topConceptOf  cs:materiaalklasse .
-
-ct:zeeschuim  rdf:type  skos:Concept ;
-        dc:identifier   "zeeschuim" ;
-        skos:broader    ct:zeewater ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Zeeschuim"@nl .
-
-ct:vastdeelvdaarde  rdf:type  skos:Concept ;
-        dc:identifier      "vastdeelvdaarde" ;
-        skos:broader       ct:materiaalklasse ;
-        skos:inScheme      cs:materiaalklasse ;
-        skos:narrower      ct:hardgesteente , ct:bodem , ct:waterbodem , ct:sediment ;
-        skos:prefLabel     "Vaste deel van de aarde"@nl ;
-        skos:topConceptOf  cs:materiaalklasse .
-
-ct:afvalwater  rdf:type  skos:Concept ;
-        dc:identifier   "afvalwater" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Afvalwater"@nl .
-
-ct:lnapl  rdf:type      skos:Concept ;
-        dc:identifier   "lnapl" ;
-        skos:broader    ct:antropogeneobjecten ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Drijflaag (LNAPL)"@nl .
-
-ct:bodemvocht  rdf:type  skos:Concept ;
-        dc:identifier   "bodemvocht" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Bodemvocht"@nl .
-
-colt:materiaalklasses
-        rdf:type        skos:Collection ;
-        dc:identifier   "materiaalklasses" ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:member     ct:koelwater , ct:lnapl , ct:antropogeneobjecten , ct:strooisel , ct:effluent , ct:waterbodem , ct:gftafval , ct:bemalingswater , ct:water , ct:zwevendestof , ct:eieren , ct:fruit , ct:plantaardigmateriaal , ct:depositie , ct:drinkwater , ct:vastdeelvdaarde , ct:zeewater , ct:bodemlucht , ct:regenwater , ct:dierlijkmateriaal , ct:sediment , ct:oppervlaktewater , ct:migratie , ct:zeeschuim , ct:schelpdieren , ct:lucht , ct:grondwater , ct:bodemvocht , ct:afvalwater , ct:bodem , ct:puurproduct , ct:dnapl , ct:hardgesteente , ct:groenten , ct:vilt , ct:melk ;
-        skos:prefLabel  "Collectie van materiaalklasses."@nl .
-
-ct:dnapl  rdf:type      skos:Concept ;
-        dc:identifier   "dnapl" ;
-        skos:broader    ct:antropogeneobjecten ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Zaklaag (DNAPL)"@nl .
-
-ct:drinkwater  rdf:type  skos:Concept ;
-        dc:identifier   "drinkwater" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Drinkwater"@nl .
-
-ct:puurproduct  rdf:type  skos:Concept ;
-        dc:identifier   "puurproduct" ;
-        skos:broader    ct:antropogeneobjecten ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Puur product"@nl .
-
-ct:oppervlaktewater  rdf:type  skos:Concept ;
-        dc:identifier   "oppervlaktewater" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:prefLabel  "Oppervlaktewater"@nl .
-
-ct:zeewater  rdf:type   skos:Concept ;
-        dc:identifier   "zeewater" ;
-        skos:broader    ct:water ;
-        skos:inScheme   cs:materiaalklasse ;
-        skos:narrower   ct:zeeschuim ;
-        skos:prefLabel  "Zeewater"@nl .
+collectie:materiaalklasses dc:identifier "be.vlaanderen.bodemenondergrond.data.id.collection.materiaalklasse.materiaalklasses";
+    a skos:Collection;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:member concept:afvalwater, concept:antropogeneobjecten, concept:bemalingswater, concept:bodem, concept:bodemlucht, concept:bodemvocht, concept:depositie, concept:dierlijkmateriaal, concept:dnapl, concept:drinkwater, concept:effluent, concept:eieren, concept:fruit, concept:gftafval, concept:groenten, concept:grondwater, concept:hardgesteente, concept:koelwater, concept:lnapl, concept:lucht, concept:melk, concept:migratie, concept:oppervlaktewater, concept:plantaardigmateriaal, concept:puurproduct, concept:regenwater, concept:schelpdieren, concept:sediment, concept:strooisel, concept:vastdeelvdaarde, concept:vilt, concept:water, concept:waterbodem, concept:zeeschuim, concept:zeewater, concept:zwevendestof;
+    skos:notation "materiaalklasses";
+    skos:prefLabel "Collectie van materiaalklasses."@nl.
+concept:afvalwater dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.afvalwater";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "afvalwater";
+    skos:prefLabel "Afvalwater"@nl;
+    skos:semanticRelation concept:water;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:antropogeneobjecten dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.antropogeneobjecten";
+    a skos:Concept;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:narrower concept:dnapl, concept:lnapl, concept:puurproduct;
+    skos:narrowerTransitive concept:dnapl, concept:lnapl, concept:puurproduct;
+    skos:notation "antropogeneobjecten";
+    skos:prefLabel "Antropogene objecten"@nl;
+    skos:semanticRelation concept:dnapl, concept:lnapl, concept:puurproduct;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:bemalingswater dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bemalingswater";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "bemalingswater";
+    skos:prefLabel "Bemalingswater"@nl;
+    skos:semanticRelation concept:water;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:bodem dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bodem";
+    a skos:Concept;
+    skos:broader concept:vastdeelvdaarde;
+    skos:broaderTransitive concept:vastdeelvdaarde;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "bodem";
+    skos:prefLabel "Bodem"@nl;
+    skos:semanticRelation concept:vastdeelvdaarde;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:bodemlucht dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bodemlucht";
+    a skos:Concept;
+    skos:broader concept:lucht;
+    skos:broaderTransitive concept:lucht;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "bodemlucht";
+    skos:prefLabel "Bodemlucht"@nl;
+    skos:semanticRelation concept:lucht;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:bodemvocht dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bodemvocht";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "bodemvocht";
+    skos:prefLabel "Bodemvocht"@nl;
+    skos:semanticRelation concept:water;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:depositie dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.depositie";
+    a skos:Concept;
+    skos:broader concept:lucht;
+    skos:broaderTransitive concept:lucht;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "depositie";
+    skos:prefLabel "Depositie"@nl;
+    skos:semanticRelation concept:lucht;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:dierlijkmateriaal dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.dierlijkmateriaal";
+    a skos:Concept;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:narrower concept:eieren, concept:melk, concept:schelpdieren;
+    skos:narrowerTransitive concept:eieren, concept:melk, concept:schelpdieren;
+    skos:notation "dierlijkmateriaal";
+    skos:prefLabel "Dierlijk materiaal"@nl;
+    skos:semanticRelation concept:eieren, concept:melk, concept:schelpdieren;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:dnapl dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.dnapl";
+    a skos:Concept;
+    skos:broader concept:antropogeneobjecten;
+    skos:broaderTransitive concept:antropogeneobjecten;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "dnapl";
+    skos:prefLabel "Zaklaag (DNAPL)"@nl;
+    skos:semanticRelation concept:antropogeneobjecten;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:drinkwater dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.drinkwater";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "drinkwater";
+    skos:prefLabel "Drinkwater"@nl;
+    skos:semanticRelation concept:water;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:effluent dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.effluent";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "effluent";
+    skos:prefLabel "Effluent"@nl;
+    skos:semanticRelation concept:water;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:eieren dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.eieren";
+    a skos:Concept;
+    skos:broader concept:dierlijkmateriaal;
+    skos:broaderTransitive concept:dierlijkmateriaal;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "eieren";
+    skos:prefLabel "Eieren"@nl;
+    skos:semanticRelation concept:dierlijkmateriaal;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:fruit dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.fruit";
+    a skos:Concept;
+    skos:broader concept:plantaardigmateriaal;
+    skos:broaderTransitive concept:plantaardigmateriaal;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "fruit";
+    skos:prefLabel "Fruit"@nl;
+    skos:semanticRelation concept:plantaardigmateriaal;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:gftafval dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.gftafval";
+    a skos:Concept;
+    skos:broader concept:plantaardigmateriaal;
+    skos:broaderTransitive concept:plantaardigmateriaal;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "gftafval";
+    skos:prefLabel "GFT-afval"@nl;
+    skos:semanticRelation concept:plantaardigmateriaal;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:groenten dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.groenten";
+    a skos:Concept;
+    skos:broader concept:plantaardigmateriaal;
+    skos:broaderTransitive concept:plantaardigmateriaal;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "groenten";
+    skos:prefLabel "Groenten"@nl;
+    skos:semanticRelation concept:plantaardigmateriaal;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:grondwater dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.grondwater";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "grondwater";
+    skos:prefLabel "Grondwater"@nl;
+    skos:semanticRelation concept:water;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:hardgesteente dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.hardgesteente";
+    a skos:Concept;
+    skos:broader concept:vastdeelvdaarde;
+    skos:broaderTransitive concept:vastdeelvdaarde;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "hardgesteente";
+    skos:prefLabel "Hard gesteente"@nl;
+    skos:semanticRelation concept:vastdeelvdaarde;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:koelwater dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.koelwater";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "koelwater";
+    skos:prefLabel "Koelwater"@nl;
+    skos:semanticRelation concept:water;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:lnapl dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.lnapl";
+    a skos:Concept;
+    skos:broader concept:antropogeneobjecten;
+    skos:broaderTransitive concept:antropogeneobjecten;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "lnapl";
+    skos:prefLabel "Drijflaag (LNAPL)"@nl;
+    skos:semanticRelation concept:antropogeneobjecten;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:lucht dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.lucht";
+    a skos:Concept;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:narrower concept:bodemlucht, concept:depositie, concept:zwevendestof;
+    skos:narrowerTransitive concept:bodemlucht, concept:depositie, concept:zwevendestof;
+    skos:notation "lucht";
+    skos:prefLabel "Lucht"@nl;
+    skos:semanticRelation concept:bodemlucht, concept:depositie, concept:zwevendestof;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:melk dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.melk";
+    a skos:Concept;
+    skos:broader concept:dierlijkmateriaal;
+    skos:broaderTransitive concept:dierlijkmateriaal;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "melk";
+    skos:prefLabel "Melk"@nl;
+    skos:semanticRelation concept:dierlijkmateriaal;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:migratie dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.migratie";
+    a skos:Concept;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "migratie";
+    skos:prefLabel "Migratie"@nl;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:oppervlaktewater dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.oppervlaktewater";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "oppervlaktewater";
+    skos:prefLabel "Oppervlaktewater"@nl;
+    skos:semanticRelation concept:water;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:plantaardigmateriaal dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.plantaardigmateriaal";
+    a skos:Concept;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:narrower concept:fruit, concept:gftafval, concept:groenten, concept:strooisel, concept:vilt;
+    skos:narrowerTransitive concept:fruit, concept:gftafval, concept:groenten, concept:strooisel, concept:vilt;
+    skos:notation "plantaardigmateriaal";
+    skos:prefLabel "Plantaardig materiaal"@nl;
+    skos:semanticRelation concept:fruit, concept:gftafval, concept:groenten, concept:strooisel, concept:vilt;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:puurproduct dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.puurproduct";
+    a skos:Concept;
+    skos:broader concept:antropogeneobjecten;
+    skos:broaderTransitive concept:antropogeneobjecten;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "puurproduct";
+    skos:prefLabel "Puur product"@nl;
+    skos:semanticRelation concept:antropogeneobjecten;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:regenwater dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.regenwater";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "regenwater";
+    skos:prefLabel "Regenwater"@nl;
+    skos:semanticRelation concept:water;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:schelpdieren dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.schelpdieren";
+    a skos:Concept;
+    skos:broader concept:dierlijkmateriaal;
+    skos:broaderTransitive concept:dierlijkmateriaal;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "schelpdieren";
+    skos:prefLabel "Schelpdieren"@nl;
+    skos:semanticRelation concept:dierlijkmateriaal;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:sediment dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.sediment";
+    a skos:Concept;
+    skos:broader concept:vastdeelvdaarde;
+    skos:broaderTransitive concept:vastdeelvdaarde;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "sediment";
+    skos:prefLabel "Sediment"@nl;
+    skos:semanticRelation concept:vastdeelvdaarde;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:strooisel dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.strooisel";
+    a skos:Concept;
+    skos:broader concept:plantaardigmateriaal;
+    skos:broaderTransitive concept:plantaardigmateriaal;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "strooisel";
+    skos:prefLabel "Strooisel"@nl;
+    skos:semanticRelation concept:plantaardigmateriaal;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:vastdeelvdaarde dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.vastdeelvdaarde";
+    a skos:Concept;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:narrower concept:bodem, concept:hardgesteente, concept:sediment, concept:waterbodem;
+    skos:narrowerTransitive concept:bodem, concept:hardgesteente, concept:sediment, concept:waterbodem;
+    skos:notation "vastdeelvdaarde";
+    skos:prefLabel "Vaste deel van de aarde"@nl;
+    skos:semanticRelation concept:bodem, concept:hardgesteente, concept:sediment, concept:waterbodem;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:vilt dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.vilt";
+    a skos:Concept;
+    skos:broader concept:plantaardigmateriaal;
+    skos:broaderTransitive concept:plantaardigmateriaal;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "vilt";
+    skos:prefLabel "Vilt"@nl;
+    skos:semanticRelation concept:plantaardigmateriaal;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:water dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.water";
+    a skos:Concept;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:narrower concept:afvalwater, concept:bemalingswater, concept:bodemvocht, concept:drinkwater, concept:effluent, concept:grondwater, concept:koelwater, concept:oppervlaktewater, concept:regenwater, concept:zeewater;
+    skos:narrowerTransitive concept:afvalwater, concept:bemalingswater, concept:bodemvocht, concept:drinkwater, concept:effluent, concept:grondwater, concept:koelwater, concept:oppervlaktewater, concept:regenwater, concept:zeeschuim, concept:zeewater;
+    skos:notation "water";
+    skos:prefLabel "Water"@nl;
+    skos:semanticRelation concept:afvalwater, concept:bemalingswater, concept:bodemvocht, concept:drinkwater, concept:effluent, concept:grondwater, concept:koelwater, concept:oppervlaktewater, concept:regenwater, concept:zeeschuim, concept:zeewater;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:waterbodem dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.waterbodem";
+    a skos:Concept;
+    skos:broader concept:vastdeelvdaarde;
+    skos:broaderTransitive concept:vastdeelvdaarde;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "waterbodem";
+    skos:prefLabel "Waterbodem"@nl;
+    skos:semanticRelation concept:vastdeelvdaarde;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:zeeschuim dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.zeeschuim";
+    a skos:Concept;
+    skos:broader concept:zeewater;
+    skos:broaderTransitive concept:water, concept:zeewater;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "zeeschuim";
+    skos:prefLabel "Zeeschuim"@nl;
+    skos:semanticRelation concept:water, concept:zeewater;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:zeewater dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.zeewater";
+    a skos:Concept;
+    skos:broader concept:water;
+    skos:broaderTransitive concept:water;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:narrower concept:zeeschuim;
+    skos:narrowerTransitive concept:zeeschuim;
+    skos:notation "zeewater";
+    skos:prefLabel "Zeewater"@nl;
+    skos:semanticRelation concept:water, concept:zeeschuim;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:zwevendestof dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.zwevendestof";
+    a skos:Concept;
+    skos:broader concept:lucht;
+    skos:broaderTransitive concept:lucht;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "zwevendestof";
+    skos:prefLabel "Zwevende stof"@nl;
+    skos:semanticRelation concept:lucht;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+conceptscheme:materiaalklasse dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.materiaalklasse";
+    a skos:ConceptScheme;
+    skos:definition "Aard van de Bemonstering."@nl;
+    skos:hasTopConcept concept:afvalwater, concept:antropogeneobjecten, concept:bemalingswater, concept:bodem, concept:bodemlucht, concept:bodemvocht, concept:depositie, concept:dierlijkmateriaal, concept:dnapl, concept:drinkwater, concept:effluent, concept:eieren, concept:fruit, concept:gftafval, concept:groenten, concept:grondwater, concept:hardgesteente, concept:koelwater, concept:lnapl, concept:lucht, concept:melk, concept:migratie, concept:oppervlaktewater, concept:plantaardigmateriaal, concept:puurproduct, concept:regenwater, concept:schelpdieren, concept:sediment, concept:strooisel, concept:vastdeelvdaarde, concept:vilt, concept:water, concept:waterbodem, concept:zeeschuim, concept:zeewater, concept:zwevendestof;
+    skos:notation "materiaalklasse";
+    skos:note "Aard van de Bemonstering."@nl;
+    skos:prefLabel "Codelijst materiaalklasse."@nl.
