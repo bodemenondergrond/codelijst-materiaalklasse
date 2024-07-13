@@ -404,6 +404,7 @@
                 "concept:drinkwater",
                 "concept:effluent",
                 "concept:eieren",
+                "concept:eluaat",
                 "concept:fruit",
                 "concept:gftafval",
                 "concept:groenten",
@@ -598,6 +599,18 @@
             "notation": "eieren",
             "prefLabel": "Eieren",
             "semanticRelation": "concept:dierlijkmateriaal",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:eluaat",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.eluaat",
+            "broader": "concept:vastdeelvdaarde",
+            "broaderTransitive": "concept:vastdeelvdaarde",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "eluaat",
+            "prefLabel": "Eluaat",
+            "semanticRelation": "concept:vastdeelvdaarde",
             "topConceptOf": "conceptscheme:materiaalklasse"
         },
         {
@@ -838,12 +851,14 @@
             "inScheme": "conceptscheme:materiaalklasse",
             "narrower": [
                 "concept:bodem",
+                "concept:eluaat",
                 "concept:hardgesteente",
                 "concept:sediment",
                 "concept:waterbodem"
             ],
             "narrowerTransitive": [
                 "concept:bodem",
+                "concept:eluaat",
                 "concept:hardgesteente",
                 "concept:sediment",
                 "concept:waterbodem"
@@ -852,6 +867,7 @@
             "prefLabel": "Vaste deel van de aarde",
             "semanticRelation": [
                 "concept:bodem",
+                "concept:eluaat",
                 "concept:hardgesteente",
                 "concept:sediment",
                 "concept:waterbodem"
@@ -994,6 +1010,7 @@
                 "concept:drinkwater",
                 "concept:effluent",
                 "concept:eieren",
+                "concept:eluaat",
                 "concept:fruit",
                 "concept:gftafval",
                 "concept:groenten",

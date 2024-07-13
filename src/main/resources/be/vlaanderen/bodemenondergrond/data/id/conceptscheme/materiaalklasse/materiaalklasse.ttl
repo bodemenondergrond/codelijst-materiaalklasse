@@ -57,7 +57,7 @@
 collectie:materiaalklasses dc:identifier "be.vlaanderen.bodemenondergrond.data.id.collection.materiaalklasse.materiaalklasses";
     a skos:Collection;
     skos:inScheme conceptscheme:materiaalklasse;
-    skos:member concept:afvalwater, concept:antropogeneobjecten, concept:bemalingswater, concept:bodem, concept:bodemlucht, concept:bodemvocht, concept:depositie, concept:dierlijkmateriaal, concept:dnapl, concept:drinkwater, concept:effluent, concept:eieren, concept:fruit, concept:gftafval, concept:groenten, concept:grondwater, concept:hardgesteente, concept:koelwater, concept:lnapl, concept:lucht, concept:melk, concept:migratie, concept:oppervlaktewater, concept:plantaardigmateriaal, concept:puurproduct, concept:regenwater, concept:schelpdieren, concept:sediment, concept:strooisel, concept:vastdeelvdaarde, concept:vilt, concept:water, concept:waterbodem, concept:zeeschuim, concept:zeewater, concept:zwevendestof;
+    skos:member concept:afvalwater, concept:antropogeneobjecten, concept:bemalingswater, concept:bodem, concept:bodemlucht, concept:bodemvocht, concept:depositie, concept:dierlijkmateriaal, concept:dnapl, concept:drinkwater, concept:effluent, concept:eieren, concept:eluaat, concept:fruit, concept:gftafval, concept:groenten, concept:grondwater, concept:hardgesteente, concept:koelwater, concept:lnapl, concept:lucht, concept:melk, concept:migratie, concept:oppervlaktewater, concept:plantaardigmateriaal, concept:puurproduct, concept:regenwater, concept:schelpdieren, concept:sediment, concept:strooisel, concept:vastdeelvdaarde, concept:vilt, concept:water, concept:waterbodem, concept:zeeschuim, concept:zeewater, concept:zwevendestof;
     skos:notation "materiaalklasses";
     skos:prefLabel "Collectie van materiaalklasses."@nl.
 concept:afvalwater dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.afvalwater";
@@ -167,6 +167,15 @@ concept:eieren dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.ma
     skos:notation "eieren";
     skos:prefLabel "Eieren"@nl;
     skos:semanticRelation concept:dierlijkmateriaal;
+    skos:topConceptOf conceptscheme:materiaalklasse.
+concept:eluaat dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.eluaat";
+    a skos:Concept;
+    skos:broader concept:vastdeelvdaarde;
+    skos:broaderTransitive concept:vastdeelvdaarde;
+    skos:inScheme conceptscheme:materiaalklasse;
+    skos:notation "eluaat";
+    skos:prefLabel "Eluaat"@nl;
+    skos:semanticRelation concept:vastdeelvdaarde;
     skos:topConceptOf conceptscheme:materiaalklasse.
 concept:fruit dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.fruit";
     a skos:Concept;
@@ -321,11 +330,11 @@ concept:strooisel dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept
 concept:vastdeelvdaarde dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.vastdeelvdaarde";
     a skos:Concept;
     skos:inScheme conceptscheme:materiaalklasse;
-    skos:narrower concept:bodem, concept:hardgesteente, concept:sediment, concept:waterbodem;
-    skos:narrowerTransitive concept:bodem, concept:hardgesteente, concept:sediment, concept:waterbodem;
+    skos:narrower concept:bodem, concept:eluaat, concept:hardgesteente, concept:sediment, concept:waterbodem;
+    skos:narrowerTransitive concept:bodem, concept:eluaat, concept:hardgesteente, concept:sediment, concept:waterbodem;
     skos:notation "vastdeelvdaarde";
     skos:prefLabel "Vaste deel van de aarde"@nl;
-    skos:semanticRelation concept:bodem, concept:hardgesteente, concept:sediment, concept:waterbodem;
+    skos:semanticRelation concept:bodem, concept:eluaat, concept:hardgesteente, concept:sediment, concept:waterbodem;
     skos:topConceptOf conceptscheme:materiaalklasse.
 concept:vilt dc:identifier "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.vilt";
     a skos:Concept;
@@ -386,7 +395,7 @@ concept:zwevendestof dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conc
 conceptscheme:materiaalklasse dc:identifier "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.materiaalklasse";
     a skos:ConceptScheme;
     skos:definition "Aard van de Bemonstering."@nl;
-    skos:hasTopConcept concept:afvalwater, concept:antropogeneobjecten, concept:bemalingswater, concept:bodem, concept:bodemlucht, concept:bodemvocht, concept:depositie, concept:dierlijkmateriaal, concept:dnapl, concept:drinkwater, concept:effluent, concept:eieren, concept:fruit, concept:gftafval, concept:groenten, concept:grondwater, concept:hardgesteente, concept:koelwater, concept:lnapl, concept:lucht, concept:melk, concept:migratie, concept:oppervlaktewater, concept:plantaardigmateriaal, concept:puurproduct, concept:regenwater, concept:schelpdieren, concept:sediment, concept:strooisel, concept:vastdeelvdaarde, concept:vilt, concept:water, concept:waterbodem, concept:zeeschuim, concept:zeewater, concept:zwevendestof;
+    skos:hasTopConcept concept:afvalwater, concept:antropogeneobjecten, concept:bemalingswater, concept:bodem, concept:bodemlucht, concept:bodemvocht, concept:depositie, concept:dierlijkmateriaal, concept:dnapl, concept:drinkwater, concept:effluent, concept:eieren, concept:eluaat, concept:fruit, concept:gftafval, concept:groenten, concept:grondwater, concept:hardgesteente, concept:koelwater, concept:lnapl, concept:lucht, concept:melk, concept:migratie, concept:oppervlaktewater, concept:plantaardigmateriaal, concept:puurproduct, concept:regenwater, concept:schelpdieren, concept:sediment, concept:strooisel, concept:vastdeelvdaarde, concept:vilt, concept:water, concept:waterbodem, concept:zeeschuim, concept:zeewater, concept:zwevendestof;
     skos:notation "materiaalklasse";
     skos:note "Aard van de Bemonstering."@nl;
     skos:prefLabel "Codelijst materiaalklasse."@nl.
