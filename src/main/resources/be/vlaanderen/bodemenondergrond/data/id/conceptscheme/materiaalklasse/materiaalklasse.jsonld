@@ -1,859 +1,1044 @@
 {
-    "@graph": [
-        {
-            "@id": "ct:grondwater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Grondwater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "grondwater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "cs:materiaalklasse",
-            "skos:definition": {
-                "@language": "nl",
-                "@value": "Aard van de Bemonstering."
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Codelijst materiaalklasse."
-            },
-            "skos:hasTopConcept": [
-                {
-                    "@id": "ct:plantaardigmateriaal"
-                },
-                {
-                    "@id": "ct:migratie"
-                },
-                {
-                    "@id": "ct:vastdeelvdaarde"
-                },
-                {
-                    "@id": "ct:lucht"
-                },
-                {
-                    "@id": "ct:antropogeneobjecten"
-                },
-                {
-                    "@id": "ct:water"
-                },
-                {
-                    "@id": "ct:dierlijkmateriaal"
-                }
-            ],
-            "dc:identifier": "materiaalklasse",
-            "@type": "skos:ConceptScheme"
-        },
-        {
-            "@id": "ct:water",
-            "@type": "skos:Concept",
-            "skos:narrower": [
-                {
-                    "@id": "ct:zeewater"
-                },
-                {
-                    "@id": "ct:bemalingswater"
-                },
-                {
-                    "@id": "ct:effluent"
-                },
-                {
-                    "@id": "ct:regenwater"
-                },
-                {
-                    "@id": "ct:oppervlaktewater"
-                },
-                {
-                    "@id": "ct:bodemvocht"
-                },
-                {
-                    "@id": "ct:afvalwater"
-                },
-                {
-                    "@id": "ct:drinkwater"
-                },
-                {
-                    "@id": "ct:koelwater"
-                },
-                {
-                    "@id": "ct:grondwater"
-                }
-            ],
-            "dc:identifier": "water",
-            "skos:broader": {
-                "@id": "ct:materiaalklasse"
-            },
-            "skos:topConceptOf": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Water"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            }
-        },
-        {
-            "@id": "ct:migratie",
-            "skos:topConceptOf": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Migratie"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:materiaalklasse"
-            },
-            "dc:identifier": "migratie",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:materiaalklasse",
-            "skos:narrower": [
-                {
-                    "@id": "ct:vastdeelvdaarde"
-                },
-                {
-                    "@id": "ct:antropogeneobjecten"
-                },
-                {
-                    "@id": "ct:water"
-                },
-                {
-                    "@id": "ct:dierlijkmateriaal"
-                },
-                {
-                    "@id": "ct:plantaardigmateriaal"
-                },
-                {
-                    "@id": "ct:migratie"
-                },
-                {
-                    "@id": "ct:lucht"
-                }
-            ]
-        },
-        {
-            "@id": "ct:vastdeelvdaarde",
-            "skos:broader": {
-                "@id": "ct:materiaalklasse"
-            },
-            "skos:topConceptOf": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:narrower": [
-                {
-                    "@id": "ct:hardgesteente"
-                },
-                {
-                    "@id": "ct:bodem"
-                },
-                {
-                    "@id": "ct:waterbodem"
-                },
-                {
-                    "@id": "ct:sediment"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Vaste deel van de aarde"
-            },
-            "dc:identifier": "vastdeelvdaarde",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:antropogeneobjecten",
-            "skos:topConceptOf": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Antropogene objecten"
-            },
-            "skos:narrower": [
-                {
-                    "@id": "ct:puurproduct"
-                },
-                {
-                    "@id": "ct:lnapl"
-                },
-                {
-                    "@id": "ct:dnapl"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:materiaalklasse"
-            },
-            "dc:identifier": "antropogeneobjecten",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:dierlijkmateriaal",
-            "skos:topConceptOf": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Dierlijk materiaal"
-            },
-            "skos:narrower": [
-                {
-                    "@id": "ct:eieren"
-                },
-                {
-                    "@id": "ct:schelpdieren"
-                },
-                {
-                    "@id": "ct:melk"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:materiaalklasse"
-            },
-            "dc:identifier": "dierlijkmateriaal",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:plantaardigmateriaal",
-            "skos:narrower": [
-                {
-                    "@id": "ct:vilt"
-                },
-                {
-                    "@id": "ct:strooisel"
-                },
-                {
-                    "@id": "ct:groenten"
-                },
-                {
-                    "@id": "ct:gftafval"
-                },
-                {
-                    "@id": "ct:fruit"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:materiaalklasse"
-            },
-            "dc:identifier": "plantaardigmateriaal",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Plantaardig materiaal"
-            },
-            "skos:topConceptOf": {
-                "@id": "cs:materiaalklasse"
-            },
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:lucht",
-            "skos:topConceptOf": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Lucht"
-            },
-            "skos:narrower": [
-                {
-                    "@id": "ct:zwevendestof"
-                },
-                {
-                    "@id": "ct:bodemlucht"
-                },
-                {
-                    "@id": "ct:depositie"
-                }
-            ],
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:materiaalklasse"
-            },
-            "dc:identifier": "lucht",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:melk",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Melk"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:dierlijkmateriaal"
-            },
-            "dc:identifier": "melk",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:waterbodem",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Waterbodem"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:vastdeelvdaarde"
-            },
-            "dc:identifier": "waterbodem",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:bemalingswater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Bemalingswater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "bemalingswater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:zwevendestof",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Zwevende stof"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:lucht"
-            },
-            "dc:identifier": "zwevendestof",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:eieren",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Eieren"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:dierlijkmateriaal"
-            },
-            "dc:identifier": "eieren",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:schelpdieren",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Schelpdieren"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:dierlijkmateriaal"
-            },
-            "dc:identifier": "schelpdieren",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:sediment",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Sediment"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:vastdeelvdaarde"
-            },
-            "dc:identifier": "sediment",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:groenten",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Groenten"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:plantaardigmateriaal"
-            },
-            "dc:identifier": "groenten",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:strooisel",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Strooisel"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:plantaardigmateriaal"
-            },
-            "dc:identifier": "strooisel",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:gftafval",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "GFT-afval"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:plantaardigmateriaal"
-            },
-            "dc:identifier": "gftafval",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:bodem",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Bodem"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:vastdeelvdaarde"
-            },
-            "dc:identifier": "bodem",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:zeewater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Zeewater"
-            },
-            "skos:narrower": {
-                "@id": "ct:zeeschuim"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "zeewater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:effluent",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Effluent"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "effluent",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:regenwater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Regenwater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "regenwater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:oppervlaktewater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Oppervlaktewater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "oppervlaktewater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:bodemvocht",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Bodemvocht"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "bodemvocht",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:afvalwater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Afvalwater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "afvalwater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:drinkwater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Drinkwater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "drinkwater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:koelwater",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Koelwater"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:water"
-            },
-            "dc:identifier": "koelwater",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:bodemlucht",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Bodemlucht"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:lucht"
-            },
-            "dc:identifier": "bodemlucht",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:depositie",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Depositie"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:lucht"
-            },
-            "dc:identifier": "depositie",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:vilt",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Vilt"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:plantaardigmateriaal"
-            },
-            "dc:identifier": "vilt",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:fruit",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Fruit"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:plantaardigmateriaal"
-            },
-            "dc:identifier": "fruit",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:puurproduct",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Puur product"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:antropogeneobjecten"
-            },
-            "dc:identifier": "puurproduct",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:lnapl",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Drijflaag (LNAPL)"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:antropogeneobjecten"
-            },
-            "dc:identifier": "lnapl",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:dnapl",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Zaklaag (DNAPL)"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:antropogeneobjecten"
-            },
-            "dc:identifier": "dnapl",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:hardgesteente",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Hard gesteente"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:vastdeelvdaarde"
-            },
-            "dc:identifier": "hardgesteente",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "ct:zeeschuim",
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Zeeschuim"
-            },
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            },
-            "skos:broader": {
-                "@id": "ct:zeewater"
-            },
-            "dc:identifier": "zeeschuim",
-            "@type": "skos:Concept"
-        },
-        {
-            "@id": "colt:materiaalklasses",
-            "skos:member": [
-                {
-                    "@id": "ct:koelwater"
-                },
-                {
-                    "@id": "ct:lnapl"
-                },
-                {
-                    "@id": "ct:antropogeneobjecten"
-                },
-                {
-                    "@id": "ct:strooisel"
-                },
-                {
-                    "@id": "ct:effluent"
-                },
-                {
-                    "@id": "ct:waterbodem"
-                },
-                {
-                    "@id": "ct:gftafval"
-                },
-                {
-                    "@id": "ct:bemalingswater"
-                },
-                {
-                    "@id": "ct:water"
-                },
-                {
-                    "@id": "ct:zwevendestof"
-                },
-                {
-                    "@id": "ct:eieren"
-                },
-                {
-                    "@id": "ct:fruit"
-                },
-                {
-                    "@id": "ct:plantaardigmateriaal"
-                },
-                {
-                    "@id": "ct:depositie"
-                },
-                {
-                    "@id": "ct:drinkwater"
-                },
-                {
-                    "@id": "ct:vastdeelvdaarde"
-                },
-                {
-                    "@id": "ct:zeewater"
-                },
-                {
-                    "@id": "ct:bodemlucht"
-                },
-                {
-                    "@id": "ct:regenwater"
-                },
-                {
-                    "@id": "ct:dierlijkmateriaal"
-                },
-                {
-                    "@id": "ct:sediment"
-                },
-                {
-                    "@id": "ct:oppervlaktewater"
-                },
-                {
-                    "@id": "ct:migratie"
-                },
-                {
-                    "@id": "ct:zeeschuim"
-                },
-                {
-                    "@id": "ct:schelpdieren"
-                },
-                {
-                    "@id": "ct:lucht"
-                },
-                {
-                    "@id": "ct:grondwater"
-                },
-                {
-                    "@id": "ct:bodemvocht"
-                },
-                {
-                    "@id": "ct:afvalwater"
-                },
-                {
-                    "@id": "ct:bodem"
-                },
-                {
-                    "@id": "ct:puurproduct"
-                },
-                {
-                    "@id": "ct:dnapl"
-                },
-                {
-                    "@id": "ct:hardgesteente"
-                },
-                {
-                    "@id": "ct:groenten"
-                },
-                {
-                    "@id": "ct:vilt"
-                },
-                {
-                    "@id": "ct:melk"
-                }
-            ],
-            "skos:prefLabel": {
-                "@language": "nl",
-                "@value": "Collectie van materiaalklasses."
-            },
-            "dc:identifier": "materiaalklasses",
-            "@type": "skos:Collection",
-            "skos:inScheme": {
-                "@id": "cs:materiaalklasse"
-            }
-        }
-    ],
     "@context": {
-        "cs": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/",
-        "ct": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/",
-        "dct": "http://purl.org/dc/terms/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "colt": "https://data.bodemenondergrond.vlaanderen.be/id/collection/materiaalklasse/",
+        "collections": {
+            "@type": "@id",
+            "@reverse": "member"
+        },
+        "id": "@id",
+        "type": {
+            "@id": "@type",
+            "@type": "@id"
+        },
+        "source": {
+            "@id": "http://purl.org/dc/terms/source",
+            "@type": "@id"
+        },
+        "sparql-service-description-name": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#name",
+            "@type": "@id"
+        },
+        "identifier": {
+            "@id": "http://purl.org/dc/terms/identifier",
+            "@type": "@id"
+        },
+        "hasVersion": {
+            "@id": "http://purl.org/dc/terms/hasVersion",
+            "@type": "@id"
+        },
+        "isVersionOf": {
+            "@id": "http://purl.org/dc/terms/isVersionOf",
+            "@type": "@id"
+        },
+        "label": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "@language": "nl"
+        },
+        "distribution": {
+            "@id": "http://www.w3.org/ns/dcat#distribution",
+            "@type": "@id"
+        },
+        "alternative": {
+            "@id": "http://purl.org/dc/terms/alternative",
+            "@language": "nl"
+        },
+        "description": {
+            "@id": "http://purl.org/dc/terms/description",
+            "@language": "nl"
+        },
+        "spatial": {
+            "@id": "http://purl.org/dc/terms/spatial",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "title": {
+            "@id": "http://purl.org/dc/terms/title",
+            "@language": "nl"
+        },
+        "landingPage": {
+            "@id": "http://www.w3.org/ns/dcat#landingPage",
+            "@type": "@id"
+        },
+        "rightsHolder": {
+            "@id": "http://purl.org/dc/terms/rightsHolder",
+            "@type": "@id"
+        },
+        "language": "http://publications.europa.eu/resource/authority/language/",
+        "accrualPeriodicity": {
+            "@id": "http://purl.org/dc/terms/accrualPeriodicity",
+            "@type": "@id"
+        },
+        "publisher": {
+            "@id": "http://purl.org/dc/terms/publisher",
+            "@type": "@id"
+        },
+        "dct.language": {
+            "@id": "http://purl.org/dc/terms/language",
+            "@type": "@id"
+        },
+        "contactPoint": {
+            "@id": "http://www.w3.org/ns/dcat#contactPoint",
+            "@type": "@id"
+        },
+        "temporal": {
+            "@id": "http://purl.org/dc/terms/temporal",
+            "@type": "@id"
+        },
+        "issued": {
+            "@id": "http://purl.org/dc/terms/issued",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "accessRights": {
+            "@id": "http://purl.org/dc/terms/accessRights",
+            "@type": "@id"
+        },
+        "license": {
+            "@id": "http://purl.org/dc/terms/license",
+            "@type": "@id"
+        },
+        "accessURL": {
+            "@id": "http://www.w3.org/ns/dcat#accessURL",
+            "@type": "@id"
+        },
+        "compressFormat": {
+            "@id": "http://www.w3.org/ns/dcat#compressFormat",
+            "@type": "@id"
+        },
+        "downloadURL": {
+            "@id": "http://www.w3.org/ns/dcat#downloadURL",
+            "@type": "@id"
+        },
+        "mediaType": {
+            "@id": "http://www.w3.org/ns/dcat#mediaType",
+            "@type": "@id"
+        },
+        "format": {
+            "@id": "http://purl.org/dc/terms/format",
+            "@type": "@id"
+        },
+        "versionInfo": {
+            "@id": "http://spdx.org/rdf/terms#versionInfo"
+        },
+        "packageName": {
+            "@id": "http://spdx.org/rdf/terms#packageName"
+        },
+        "packageFileName": {
+            "@id": "http://spdx.org/rdf/terms#packageFileName"
+        },
+        "downloadLocation": {
+            "@id": "http://spdx.org/rdf/terms#downloadLocation",
+            "@type": "@id"
+        },
+        "relationshipType_packageOf": {
+            "@id": "http://spdx.org/rdf/terms#relationshipType_packageOf",
+            "@type": "@id"
+        },
+        "availableGraphs": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#availableGraphs",
+            "@type": "@id"
+        },
+        "resultFormat": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#resultFormat",
+            "@type": "@id"
+        },
+        "feature": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#feature",
+            "@type": "@id"
+        },
+        "supportedLanguage": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#supportedLanguage",
+            "@type": "@id"
+        },
+        "url": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#url",
+            "@type": "@id"
+        },
+        "comment": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+            "@language": "nl"
+        },
+        "defaultDataset": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultDataset",
+            "@type": "@id"
+        },
+        "endpoint": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#endpoint",
+            "@type": "@id"
+        },
+        "namedGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#namedGraph",
+            "@type": "@id"
+        },
+        "homepage": {
+            "@id": "http://xmlns.com/foaf/0.1/homepage",
+            "@type": "@id"
+        },
+        "service": {
+            "@id": "http://www.w3.org/ns/dcat#service",
+            "@type": "@id"
+        },
+        "rootResource": {
+            "@id": "http://rdfs.org/ns/void#rootResource",
+            "@type": "@id"
+        },
+        "dataset": {
+            "@id": "http://www.w3.org/ns/dcat#dataset",
+            "@type": "@id"
+        },
+        "servesDataset": {
+            "@id": "http://www.w3.org/ns/dcat#servesDataset",
+            "@type": "@id"
+        },
+        "endpointDescription": {
+            "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+            "@type": "@id"
+        },
+        "endpointURL": {
+            "@id": "http://www.w3.org/ns/dcat#endpointURL",
+            "@type": "@id"
+        },
+        "conformsTo": {
+            "@id": "http://purl.org/dc/terms/conformsTo",
+            "@type": "@id"
+        },
+        "dc.identifier": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "dc.language": {
+            "@id": "http://purl.org/dc/elements/1.1/language",
+            "@language": "nl"
+        },
+        "dc.source": {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+        },
+        "version": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "name": {
+            "@id": "http://spdx.org/rdf/terms#name"
+        },
+        "seeAlso": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+            "@type": "@id"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "topConceptOf": {
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+            "@type": "@id"
+        },
+        "hasTopConcept": {
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+            "@type": "@id"
+        },
+        "uri": {
+            "@id": "@id",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "@language": "nl"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "altLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "@language": "nl"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note",
+            "@language": "nl"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition",
+            "@language": "nl"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id"
+        },
+        "casNumber": {
+            "@id": "http://dbpedia.org/ontology/casNumber"
+        },
+        "references": {
+            "@id": "http://purl.org/dc/terms/references",
+            "@type": "@id"
+        },
+        "isReferencedBy": {
+            "@id": "http://purl.org/dc/terms/isReferencedBy",
+            "@type": "@id"
+        },
+        "relation": {
+            "@id": "http://purl.org/dc/terms/relation",
+            "@type": "@id"
+        },
+        "graph": {
+            "@id": "@graph"
+        },
+        "broaderTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+            "@type": "@id"
+        },
+        "broadMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+            "@type": "@id"
+        },
+        "closeMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+            "@type": "@id"
+        },
+        "exactMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+            "@type": "@id"
+        },
+        "mappingRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+            "@type": "@id"
+        },
+        "broader": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broader",
+            "@type": "@id"
+        },
+        "narrower": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+            "@type": "@id"
+        },
+        "narrowerTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+            "@type": "@id"
+        },
+        "narrowMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+            "@type": "@id"
+        },
+        "semanticRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+            "@type": "@id"
+        },
+        "belongsTo": {
+            "@id": "http://rdf-vocabulary.ddialliance.org/xkos#belongsTo",
+            "@type": "@id"
+        },
+        "concept": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/",
+        "collectie": "https://data.bodemenondergrond.vlaanderen.be/id/collection/materiaalklasse/",
+        "access_right": "http://publications.europa.eu/resource/authority/access-right/",
+        "adms": "http://www.w3.org/ns/adms#",
+        "assettype": "http://purl.org/adms/assettype/",
+        "conceptscheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/",
+        "country": "http://publications.europa.eu/resource/authority/country/",
+        "datasets": "https://datasets.bodemenondergrond.vlaanderen.be/",
+        "datatheme_be": "http://vocab.belgif.be/auth/datatheme/",
+        "datatheme_eu": "http://publications.europa.eu/resource/authority/data-theme/",
+        "dbo": "http://dbpedia.org/ontology/",
+        "dcat": "http://www.w3.org/ns/dcat#",
         "dc": "http://purl.org/dc/elements/1.1/",
-        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#"
-    }
+        "dcterms": "http://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
+        "eurovoc": "http://eurovoc.europa.eu/",
+        "file_type": "http://publications.europa.eu/resource/authority/file-type/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "formats": "http://www.w3.org/ns/formats/",
+        "frequency": "http://publications.europa.eu/resource/authority/frequency/",
+        "gemet": "http://www.eionet.europa.eu/gemet/concept/",
+        "licence": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/",
+        "metadata": "https://data.bodemenondergrond.vlaanderen.be/ns/metadata#",
+        "omg_catalog": "https://data.bodemenondergrond.vlaanderen.be/id/catalog/",
+        "omg_catalog_doc": "https://data.bodemenondergrond.vlaanderen.be/doc/catalog/",
+        "omg_collection": "https://data.bodemenondergrond.vlaanderen.be/id/collection/",
+        "omg_dataservice": "https://data.bodemenondergrond.vlaanderen.be/id/dataservice/",
+        "omg_dataset_doc": "https://data.bodemenondergrond.vlaanderen.be/doc/dataset/",
+        "omg_dataset": "https://data.bodemenondergrond.vlaanderen.be/id/dataset/",
+        "omg_distribution_doc": "https://data.bodemenondergrond.vlaanderen.be/doc/distribution/",
+        "omg_distribution": "https://data.bodemenondergrond.vlaanderen.be/id/distribution/",
+        "omg_graphcollection": "https://data.bodemenondergrond.vlaanderen.be/id/graphcollection/",
+        "omg_graph": "https://data.bodemenondergrond.vlaanderen.be/id/graph/",
+        "omg_id": "https://data.bodemenondergrond.vlaanderen.be/id/",
+        "omg_named_graph": "https://data.bodemenondergrond.vlaanderen.be/id/namedgraph/",
+        "omg_ontology": "https://data.bodemenondergrond.vlaanderen.be/id/ontology/",
+        "omg_package": "https://data.bodemenondergrond.vlaanderen.be/id/package/",
+        "omg_periodoftime": "https://data.bodemenondergrond.vlaanderen.be/id/periodoftime/",
+        "omg_service": "https://data.bodemenondergrond.vlaanderen.be/id/service/",
+        "omg_vcard": "https://data.bodemenondergrond.vlaanderen.be/id/vcard/",
+        "ovo": "http://data.vlaanderen.be/id/organisatie/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "repo": "https://repo.omgeving.vlaanderen.be/artifactory/release/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sd": "http://www.w3.org/ns/sparql-service-description#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "ssd": "http://www.w3.org/ns/sparql-service-description#",
+        "ts": "http://www.w3.org/ns/formats/",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "void": "http://rdfs.org/ns/void#",
+        "wise": "http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/",
+        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@base": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/"
+    },
+    "graph": [
+        {
+            "id": "collectie:materiaalklasses",
+            "type": "skos:Collection",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.collection.materiaalklasse.materiaalklasses",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "member": [
+                "concept:afvalwater",
+                "concept:antropogeneobjecten",
+                "concept:bemalingswater",
+                "concept:bodem",
+                "concept:bodemlucht",
+                "concept:bodemvocht",
+                "concept:depositie",
+                "concept:dierlijkmateriaal",
+                "concept:dnapl",
+                "concept:drinkwater",
+                "concept:effluent",
+                "concept:eieren",
+                "concept:eluaat",
+                "concept:fruit",
+                "concept:gftafval",
+                "concept:groenten",
+                "concept:grondwater",
+                "concept:hardgesteente",
+                "concept:koelwater",
+                "concept:lnapl",
+                "concept:lucht",
+                "concept:melk",
+                "concept:migratie",
+                "concept:oppervlaktewater",
+                "concept:plantaardigmateriaal",
+                "concept:puurproduct",
+                "concept:regenwater",
+                "concept:schelpdieren",
+                "concept:sediment",
+                "concept:strooisel",
+                "concept:vastdeelvdaarde",
+                "concept:vilt",
+                "concept:water",
+                "concept:waterbodem",
+                "concept:zeeschuim",
+                "concept:zeewater",
+                "concept:zwevendestof"
+            ],
+            "notation": "materiaalklasses",
+            "prefLabel": "Collectie van materiaalklasses."
+        },
+        {
+            "id": "concept:afvalwater",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.afvalwater",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "afvalwater",
+            "prefLabel": "Afvalwater",
+            "semanticRelation": "concept:water",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:antropogeneobjecten",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.antropogeneobjecten",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "narrower": [
+                "concept:dnapl",
+                "concept:lnapl",
+                "concept:puurproduct"
+            ],
+            "narrowerTransitive": [
+                "concept:dnapl",
+                "concept:lnapl",
+                "concept:puurproduct"
+            ],
+            "notation": "antropogeneobjecten",
+            "prefLabel": "Antropogene objecten",
+            "semanticRelation": [
+                "concept:dnapl",
+                "concept:lnapl",
+                "concept:puurproduct"
+            ],
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:bemalingswater",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bemalingswater",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "bemalingswater",
+            "prefLabel": "Bemalingswater",
+            "semanticRelation": "concept:water",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:bodem",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bodem",
+            "broader": "concept:vastdeelvdaarde",
+            "broaderTransitive": "concept:vastdeelvdaarde",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "bodem",
+            "prefLabel": "Bodem",
+            "semanticRelation": "concept:vastdeelvdaarde",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:bodemlucht",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bodemlucht",
+            "broader": "concept:lucht",
+            "broaderTransitive": "concept:lucht",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "bodemlucht",
+            "prefLabel": "Bodemlucht",
+            "semanticRelation": "concept:lucht",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:bodemvocht",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bodemvocht",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "bodemvocht",
+            "prefLabel": "Bodemvocht",
+            "semanticRelation": "concept:water",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:depositie",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.depositie",
+            "broader": "concept:lucht",
+            "broaderTransitive": "concept:lucht",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "depositie",
+            "prefLabel": "Depositie",
+            "semanticRelation": "concept:lucht",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:dierlijkmateriaal",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.dierlijkmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "narrower": [
+                "concept:eieren",
+                "concept:melk",
+                "concept:schelpdieren"
+            ],
+            "narrowerTransitive": [
+                "concept:eieren",
+                "concept:melk",
+                "concept:schelpdieren"
+            ],
+            "notation": "dierlijkmateriaal",
+            "prefLabel": "Dierlijk materiaal",
+            "semanticRelation": [
+                "concept:eieren",
+                "concept:melk",
+                "concept:schelpdieren"
+            ],
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:dnapl",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.dnapl",
+            "broader": "concept:antropogeneobjecten",
+            "broaderTransitive": "concept:antropogeneobjecten",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "dnapl",
+            "prefLabel": "Zaklaag (DNAPL)",
+            "semanticRelation": "concept:antropogeneobjecten",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:drinkwater",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.drinkwater",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "drinkwater",
+            "prefLabel": "Drinkwater",
+            "semanticRelation": "concept:water",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:effluent",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.effluent",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "effluent",
+            "prefLabel": "Effluent",
+            "semanticRelation": "concept:water",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:eieren",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.eieren",
+            "broader": "concept:dierlijkmateriaal",
+            "broaderTransitive": "concept:dierlijkmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "eieren",
+            "prefLabel": "Eieren",
+            "semanticRelation": "concept:dierlijkmateriaal",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:eluaat",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.eluaat",
+            "broader": "concept:vastdeelvdaarde",
+            "broaderTransitive": "concept:vastdeelvdaarde",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "eluaat",
+            "prefLabel": "Eluaat",
+            "semanticRelation": "concept:vastdeelvdaarde",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:fruit",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.fruit",
+            "broader": "concept:plantaardigmateriaal",
+            "broaderTransitive": "concept:plantaardigmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "fruit",
+            "prefLabel": "Fruit",
+            "semanticRelation": "concept:plantaardigmateriaal",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:gftafval",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.gftafval",
+            "broader": "concept:plantaardigmateriaal",
+            "broaderTransitive": "concept:plantaardigmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "gftafval",
+            "prefLabel": "GFT-afval",
+            "semanticRelation": "concept:plantaardigmateriaal",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:groenten",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.groenten",
+            "broader": "concept:plantaardigmateriaal",
+            "broaderTransitive": "concept:plantaardigmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "groenten",
+            "prefLabel": "Groenten",
+            "semanticRelation": "concept:plantaardigmateriaal",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:grondwater",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.grondwater",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "grondwater",
+            "prefLabel": "Grondwater",
+            "semanticRelation": "concept:water",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:hardgesteente",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.hardgesteente",
+            "broader": "concept:vastdeelvdaarde",
+            "broaderTransitive": "concept:vastdeelvdaarde",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "hardgesteente",
+            "prefLabel": "Hard gesteente",
+            "semanticRelation": "concept:vastdeelvdaarde",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:koelwater",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.koelwater",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "koelwater",
+            "prefLabel": "Koelwater",
+            "semanticRelation": "concept:water",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:lnapl",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.lnapl",
+            "broader": "concept:antropogeneobjecten",
+            "broaderTransitive": "concept:antropogeneobjecten",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "lnapl",
+            "prefLabel": "Drijflaag (LNAPL)",
+            "semanticRelation": "concept:antropogeneobjecten",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:lucht",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.lucht",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "narrower": [
+                "concept:bodemlucht",
+                "concept:depositie",
+                "concept:zwevendestof"
+            ],
+            "narrowerTransitive": [
+                "concept:bodemlucht",
+                "concept:depositie",
+                "concept:zwevendestof"
+            ],
+            "notation": "lucht",
+            "prefLabel": "Lucht",
+            "semanticRelation": [
+                "concept:bodemlucht",
+                "concept:depositie",
+                "concept:zwevendestof"
+            ],
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:melk",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.melk",
+            "broader": "concept:dierlijkmateriaal",
+            "broaderTransitive": "concept:dierlijkmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "melk",
+            "prefLabel": "Melk",
+            "semanticRelation": "concept:dierlijkmateriaal",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:migratie",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.migratie",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "migratie",
+            "prefLabel": "Migratie",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:oppervlaktewater",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.oppervlaktewater",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "oppervlaktewater",
+            "prefLabel": "Oppervlaktewater",
+            "semanticRelation": "concept:water",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:plantaardigmateriaal",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.plantaardigmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "narrower": [
+                "concept:fruit",
+                "concept:gftafval",
+                "concept:groenten",
+                "concept:strooisel",
+                "concept:vilt"
+            ],
+            "narrowerTransitive": [
+                "concept:fruit",
+                "concept:gftafval",
+                "concept:groenten",
+                "concept:strooisel",
+                "concept:vilt"
+            ],
+            "notation": "plantaardigmateriaal",
+            "prefLabel": "Plantaardig materiaal",
+            "semanticRelation": [
+                "concept:fruit",
+                "concept:gftafval",
+                "concept:groenten",
+                "concept:strooisel",
+                "concept:vilt"
+            ],
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:puurproduct",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.puurproduct",
+            "broader": "concept:antropogeneobjecten",
+            "broaderTransitive": "concept:antropogeneobjecten",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "puurproduct",
+            "prefLabel": "Puur product",
+            "semanticRelation": "concept:antropogeneobjecten",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:regenwater",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.regenwater",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "regenwater",
+            "prefLabel": "Regenwater",
+            "semanticRelation": "concept:water",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:schelpdieren",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.schelpdieren",
+            "broader": "concept:dierlijkmateriaal",
+            "broaderTransitive": "concept:dierlijkmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "schelpdieren",
+            "prefLabel": "Schelpdieren",
+            "semanticRelation": "concept:dierlijkmateriaal",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:sediment",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.sediment",
+            "broader": "concept:vastdeelvdaarde",
+            "broaderTransitive": "concept:vastdeelvdaarde",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "sediment",
+            "prefLabel": "Sediment",
+            "semanticRelation": "concept:vastdeelvdaarde",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:strooisel",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.strooisel",
+            "broader": "concept:plantaardigmateriaal",
+            "broaderTransitive": "concept:plantaardigmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "strooisel",
+            "prefLabel": "Strooisel",
+            "semanticRelation": "concept:plantaardigmateriaal",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:vastdeelvdaarde",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.vastdeelvdaarde",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "narrower": [
+                "concept:bodem",
+                "concept:eluaat",
+                "concept:hardgesteente",
+                "concept:sediment",
+                "concept:waterbodem"
+            ],
+            "narrowerTransitive": [
+                "concept:bodem",
+                "concept:eluaat",
+                "concept:hardgesteente",
+                "concept:sediment",
+                "concept:waterbodem"
+            ],
+            "notation": "vastdeelvdaarde",
+            "prefLabel": "Vaste deel van de aarde",
+            "semanticRelation": [
+                "concept:bodem",
+                "concept:eluaat",
+                "concept:hardgesteente",
+                "concept:sediment",
+                "concept:waterbodem"
+            ],
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:vilt",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.vilt",
+            "broader": "concept:plantaardigmateriaal",
+            "broaderTransitive": "concept:plantaardigmateriaal",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "vilt",
+            "prefLabel": "Vilt",
+            "semanticRelation": "concept:plantaardigmateriaal",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:water",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "narrower": [
+                "concept:afvalwater",
+                "concept:bemalingswater",
+                "concept:bodemvocht",
+                "concept:drinkwater",
+                "concept:effluent",
+                "concept:grondwater",
+                "concept:koelwater",
+                "concept:oppervlaktewater",
+                "concept:regenwater",
+                "concept:zeewater"
+            ],
+            "narrowerTransitive": [
+                "concept:afvalwater",
+                "concept:bemalingswater",
+                "concept:bodemvocht",
+                "concept:drinkwater",
+                "concept:effluent",
+                "concept:grondwater",
+                "concept:koelwater",
+                "concept:oppervlaktewater",
+                "concept:regenwater",
+                "concept:zeeschuim",
+                "concept:zeewater"
+            ],
+            "notation": "water",
+            "prefLabel": "Water",
+            "semanticRelation": [
+                "concept:afvalwater",
+                "concept:bemalingswater",
+                "concept:bodemvocht",
+                "concept:drinkwater",
+                "concept:effluent",
+                "concept:grondwater",
+                "concept:koelwater",
+                "concept:oppervlaktewater",
+                "concept:regenwater",
+                "concept:zeeschuim",
+                "concept:zeewater"
+            ],
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:waterbodem",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.waterbodem",
+            "broader": "concept:vastdeelvdaarde",
+            "broaderTransitive": "concept:vastdeelvdaarde",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "waterbodem",
+            "prefLabel": "Waterbodem",
+            "semanticRelation": "concept:vastdeelvdaarde",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:zeeschuim",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.zeeschuim",
+            "broader": "concept:zeewater",
+            "broaderTransitive": [
+                "concept:water",
+                "concept:zeewater"
+            ],
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "zeeschuim",
+            "prefLabel": "Zeeschuim",
+            "semanticRelation": [
+                "concept:water",
+                "concept:zeewater"
+            ],
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:zeewater",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.zeewater",
+            "broader": "concept:water",
+            "broaderTransitive": "concept:water",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "narrower": "concept:zeeschuim",
+            "narrowerTransitive": "concept:zeeschuim",
+            "notation": "zeewater",
+            "prefLabel": "Zeewater",
+            "semanticRelation": [
+                "concept:water",
+                "concept:zeeschuim"
+            ],
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "concept:zwevendestof",
+            "type": "skos:Concept",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.zwevendestof",
+            "broader": "concept:lucht",
+            "broaderTransitive": "concept:lucht",
+            "inScheme": "conceptscheme:materiaalklasse",
+            "notation": "zwevendestof",
+            "prefLabel": "Zwevende stof",
+            "semanticRelation": "concept:lucht",
+            "topConceptOf": "conceptscheme:materiaalklasse"
+        },
+        {
+            "id": "conceptscheme:materiaalklasse",
+            "type": "skos:ConceptScheme",
+            "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.materiaalklasse",
+            "definition": "Aard van de Bemonstering.",
+            "hasTopConcept": [
+                "concept:afvalwater",
+                "concept:antropogeneobjecten",
+                "concept:bemalingswater",
+                "concept:bodem",
+                "concept:bodemlucht",
+                "concept:bodemvocht",
+                "concept:depositie",
+                "concept:dierlijkmateriaal",
+                "concept:dnapl",
+                "concept:drinkwater",
+                "concept:effluent",
+                "concept:eieren",
+                "concept:eluaat",
+                "concept:fruit",
+                "concept:gftafval",
+                "concept:groenten",
+                "concept:grondwater",
+                "concept:hardgesteente",
+                "concept:koelwater",
+                "concept:lnapl",
+                "concept:lucht",
+                "concept:melk",
+                "concept:migratie",
+                "concept:oppervlaktewater",
+                "concept:plantaardigmateriaal",
+                "concept:puurproduct",
+                "concept:regenwater",
+                "concept:schelpdieren",
+                "concept:sediment",
+                "concept:strooisel",
+                "concept:vastdeelvdaarde",
+                "concept:vilt",
+                "concept:water",
+                "concept:waterbodem",
+                "concept:zeeschuim",
+                "concept:zeewater",
+                "concept:zwevendestof"
+            ],
+            "notation": "materiaalklasse",
+            "note": "Aard van de Bemonstering.",
+            "prefLabel": "Codelijst materiaalklasse."
+        }
+    ]
 }

@@ -1,0 +1,166 @@
+types : materiaalklasses
+skos:
+  rules :
+    skos_rules : /../node_modules/maven-metadata-generator-npm/src/n3/skos-rules.n3
+    dcterms_rules : /../node_modules/maven-metadata-generator-npm/src/n3/dcterms-rules.n3
+  prefixes :
+    concept : https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/
+    collectie : https://data.bodemenondergrond.vlaanderen.be/id/collection/materiaalklasse/
+  path: ./main/resources/be/vlaanderen/bodemenondergrond/data/id/conceptscheme/
+  name: materiaalklasse
+  turtle: .ttl
+  jsonld: .jsonld
+  xsd: .xsd
+  csv: .csv
+  rdf_xml: .rdf
+  xlsx: .xlsx
+  nt: .nt
+
+source:
+  path: ./source/
+  codelijst_csv: codelijst-source.csv
+  context: context.json
+dcat:
+  temp_path:
+  path_catalog: /be/vlaanderen/bodemenondergrond/data/id/catalog/
+  path_dataset: /be/vlaanderen/bodemenondergrond/data/id/dataset/
+  name: codelijst-materiaalklasse
+  dataset_jsonld: dataset.jsonld
+  dataset_turtle: dataset.ttl
+  catalog_turtle: catalog.ttl
+  catalog_jsonld: catalog.jsonld
+
+ap :
+  path: ./main/resources/be/vlaanderen/bodemenondergrond/data/id/ontology/
+  type: ap-constraints
+  name: materiaalklasse
+  turtle: .ttl
+
+metadata :
+  sparqlservice:
+    endpoint: https://data.bodemenondergrond.vlaanderen.be/sparql
+    feature:
+      - http://www.w3.org/ns/sparql-service-description#DereferencesURIs
+      - http://www.w3.org/ns/sparql-service-description#UnionDefaultGraph
+    resultFormat:
+      - http://www.w3.org/ns/formats/JSON-LD
+      - http://www.w3.org/ns/formats/RDF_XML
+      - http://www.w3.org/ns/formats/N-Triples
+      - http://www.w3.org/ns/formats/N-Quads
+      - http://www.w3.org/ns/formats/SPARQL_Results_CSV
+      - http://www.w3.org/ns/formats/SPARQL_Results_XML
+      - http://www.w3.org/ns/formats/Turtle
+      - http://www.w3.org/ns/formats/SPARQL_Results_JSON
+    supportedLanguage: http://www.w3.org/ns/sparql-service-description#SPARQL10Query
+  all :
+    accessURL : https://github.com/bodemenondergrond/codelijst-materiaalklasse.git
+    contactPoint : https://data.omgeving.vlaanderen.be/id/vcard/helpdesk
+    license : http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0
+    publisher : http://data.vlaanderen.be/id/organisatie/OVO003323
+    rightsHolder :  http://data.vlaanderen.be/id/organisatie/OVO003749
+    theme :
+      - http://eurovoc.europa.eu/2407
+      - http://publications.europa.eu/resource/authority/data-theme/ENVI
+      - http://vocab.belgif.be/auth/datatheme/ENVI
+      - http://www.eionet.europa.eu/gemet/concept/10087
+    spatial :
+      - http://publications.europa.eu/resource/authority/country/BEL
+      - https://sws.geonames.org/3337388/
+    accessRights :  http://publications.europa.eu/resource/authority/access-right/PUBLIC
+    accrualPeriodicity : http://publications.europa.eu/resource/authority/frequency/IRREG
+    dct.language : http://publications.europa.eu/resource/authority/language/NLD
+    landingPage  : https://data.bodemenondergrond.vlaanderen.be/doc/catalog/codelijst.html
+  catalog :
+    uri : https://data.bodemenondergrond.vlaanderen.be/id/catalog/codelijst
+    type: http://www.w3.org/ns/dcat#Catalog
+  dataset :
+    temporal : https://data.omgeving.vlaanderen.be/id/periodoftime/dataset_omg
+    type : http://www.w3.org/ns/dcat#Dataset
+  distribution :
+    xlsx:
+      mediaType: https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+      format: http://publications.europa.eu/resource/authority/file-type/XLSX
+      type: http://www.w3.org/ns/dcat#Distribution
+    csv :
+      mediaType : https://www.iana.org/assignments/media-types/text/csv
+      format : http://publications.europa.eu/resource/authority/file-type/CSV
+      type : http://www.w3.org/ns/dcat#Distribution
+    nt:
+      mediaType: https://www.iana.org/assignments/media-types/application/n-triples
+      format: http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES
+      type: http://www.w3.org/ns/dcat#Distribution
+    ttl:
+      mediaType: https://www.iana.org/assignments/media-types/text/turtle
+      format: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
+      type : http://www.w3.org/ns/dcat#Distribution
+    xsd:
+      mediaType: https://www.iana.org/assignments/media-types/application/rdf+xml
+      format: http://publications.europa.eu/resource/authority/file-type/RDF_XML
+      type: http://www.w3.org/ns/dcat#Distribution
+    jsonld:
+      mediaType: https://www.iana.org/assignments/media-types/application/ld+json
+      format: http://publications.europa.eu/resource/authority/file-type/JSON_LD
+      type : http://www.w3.org/ns/dcat#Distribution
+    jar :
+      mediaType : https://www.iana.org/assignments/media-types/application/java-archive
+      format : http://publications.europa.eu/resource/authority/file-type/JAR
+      type :
+        - http://www.w3.org/ns/dcat#Distribution
+        - http://spdx.org/rdf/terms#Package
+
+prefixes :
+  access_right: http://publications.europa.eu/resource/authority/access-right/
+  adms: http://www.w3.org/ns/adms#
+  assettype: http://purl.org/adms/assettype/
+  conceptscheme: https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/
+  country: http://publications.europa.eu/resource/authority/country/
+  datasets: https://datasets.bodemenondergrond.vlaanderen.be/
+  datatheme_be: http://vocab.belgif.be/auth/datatheme/
+  datatheme_eu: http://publications.europa.eu/resource/authority/data-theme/
+  dbo: http://dbpedia.org/ontology/
+  dcat: http://www.w3.org/ns/dcat#
+  dc: http://purl.org/dc/elements/1.1/
+  dcterms: http://purl.org/dc/terms/
+  dct: http://purl.org/dc/terms/
+  eurovoc: http://eurovoc.europa.eu/
+  file_type: http://publications.europa.eu/resource/authority/file-type/
+  foaf: http://xmlns.com/foaf/0.1/
+  formats: http://www.w3.org/ns/formats/
+  frequency: http://publications.europa.eu/resource/authority/frequency/
+  gemet: http://www.eionet.europa.eu/gemet/concept/
+  licence: http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/
+  metadata: https://data.bodemenondergrond.vlaanderen.be/ns/metadata#
+  omg_catalog: https://data.bodemenondergrond.vlaanderen.be/id/catalog/
+  omg_catalog_doc: https://data.bodemenondergrond.vlaanderen.be/doc/catalog/
+  omg_collection: https://data.bodemenondergrond.vlaanderen.be/id/collection/
+  omg_dataservice: https://data.bodemenondergrond.vlaanderen.be/id/dataservice/
+  omg_dataset_doc: https://data.bodemenondergrond.vlaanderen.be/doc/dataset/
+  omg_dataset: https://data.bodemenondergrond.vlaanderen.be/id/dataset/
+  omg_distribution_doc: https://data.bodemenondergrond.vlaanderen.be/doc/distribution/
+  omg_distribution: https://data.bodemenondergrond.vlaanderen.be/id/distribution/
+  omg_graphcollection: https://data.bodemenondergrond.vlaanderen.be/id/graphcollection/
+  omg_graph: https://data.bodemenondergrond.vlaanderen.be/id/graph/
+  omg_id: https://data.bodemenondergrond.vlaanderen.be/id/
+  omg_named_graph: https://data.bodemenondergrond.vlaanderen.be/id/namedgraph/
+  omg_ontology: https://data.bodemenondergrond.vlaanderen.be/id/ontology/
+  omg_package: https://data.bodemenondergrond.vlaanderen.be/id/package/
+  omg_periodoftime: https://data.bodemenondergrond.vlaanderen.be/id/periodoftime/
+  omg_service: https://data.bodemenondergrond.vlaanderen.be/id/service/
+  omg_vcard: https://data.bodemenondergrond.vlaanderen.be/id/vcard/
+  ovo: http://data.vlaanderen.be/id/organisatie/
+  owl: http://www.w3.org/2002/07/owl#
+  repo: https://repo.omgeving.vlaanderen.be/artifactory/release/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sd: http://www.w3.org/ns/sparql-service-description#
+  skos: http://www.w3.org/2004/02/skos/core#
+  spdx: http://spdx.org/rdf/terms#
+  ssd: http://www.w3.org/ns/sparql-service-description#
+  ts: http://www.w3.org/ns/formats/
+  vcard: http://www.w3.org/2006/vcard/ns#
+  void: http://rdfs.org/ns/void#
+  wise: http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/
+  xkos: http://rdf-vocabulary.ddialliance.org/xkos#
+  xsd: http://www.w3.org/2001/XMLSchema#
+deploy:
+  virtuoso: virtuoso-bodemenondergrond
