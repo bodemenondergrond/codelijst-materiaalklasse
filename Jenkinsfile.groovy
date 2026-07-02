@@ -15,10 +15,10 @@ pipeline {
             }
         }
 
-        stage('Build and deploy') {
+        stage('Deploy') {
            when { 
                 allOf {
-                    branch pattern: 'main|release.*|develop.*', comparator: 'REGEXP' 
+                    expression { env.BRANCH_IS_PRIMARY }
                     expression { !versions.isRelease() }    
                 }
             }
@@ -28,8 +28,13 @@ pipeline {
                 }
            }
         }
-        stage('Build only') {
-           when { branch pattern: 'FEATURE.*', comparator: 'REGEXP' }
+        stage('Verify') {
+           when { 
+                allOf {
+                    expression { !env.BRANCH_IS_PRIMARY }
+                    expression { !versions.isRelease() }    
+                }
+            }
            steps {
                 script {
                     maven.goal([goal: 'verify', skipTests: true])
@@ -52,12 +57,11 @@ pipeline {
         }
         
         stage("Release") {
-            // not all branches can be released
             when {
                 allOf {
                     expression { git.notSkipCi() }
                     expression { versions.isRelease() }
-                    branch pattern: 'main|release.*', comparator: 'REGEXP'
+                    expression { env.BRANCH_IS_PRIMARY }
                 }
             }
             steps {
@@ -82,7 +86,7 @@ pipeline {
     post {
         always {
             script {
-                pipelineSummary([sonarProjectKey: env.BRANCH_IS_PRIMARY && !versions.isRelease() ? env.SONAR_PROJECT_KEY : null])
+                pipelineSummary()
             }
         }
     }
