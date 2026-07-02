@@ -2,6 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:be.vlaanderen.bodemenondergrond.data.id.graph:codelijst-materiaalklasse">
   <xs:simpleType name="be.vlaanderen.bodemenondergrond.data.id.conceptscheme.materiaalklasse">
     <xs:restriction base="xs:string">
+      <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/collection/materiaalklasse/materiaalklasses" />
       <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/afvalwater" />
       <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten" />
       <xs:enumeration value="https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bemalingswater" />
