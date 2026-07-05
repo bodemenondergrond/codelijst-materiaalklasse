@@ -1,0 +1,609 @@
+[
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/afvalwater",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.afvalwater",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "afvalwater",
+        "prefLabel": "Afvalwater",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.antropogeneobjecten",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "narrower": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dnapl",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lnapl",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/puurproduct"
+        ],
+        "narrowerTransitive": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dnapl",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lnapl",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/puurproduct"
+        ],
+        "notation": "antropogeneobjecten",
+        "prefLabel": "Antropogene objecten",
+        "semanticRelation": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dnapl",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lnapl",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/puurproduct"
+        ],
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bemalingswater",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bemalingswater",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "bemalingswater",
+        "prefLabel": "Bemalingswater",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodem",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bodem",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "bodem",
+        "prefLabel": "Bodem",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemlucht",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bodemlucht",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "bodemlucht",
+        "prefLabel": "Bodemlucht",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemvocht",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.bodemvocht",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "bodemvocht",
+        "prefLabel": "Bodemvocht",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/depositie",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.depositie",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "depositie",
+        "prefLabel": "Depositie",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.dierlijkmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "narrower": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eieren",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/melk",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/schelpdieren"
+        ],
+        "narrowerTransitive": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eieren",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/melk",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/schelpdieren"
+        ],
+        "notation": "dierlijkmateriaal",
+        "prefLabel": "Dierlijk materiaal",
+        "semanticRelation": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eieren",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/melk",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/schelpdieren"
+        ],
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dnapl",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.dnapl",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "dnapl",
+        "prefLabel": "Zaklaag (DNAPL)",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/drinkwater",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.drinkwater",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "drinkwater",
+        "prefLabel": "Drinkwater",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/effluent",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.effluent",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "effluent",
+        "prefLabel": "Effluent",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eieren",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.eieren",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "eieren",
+        "prefLabel": "Eieren",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eluaat",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.eluaat",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "eluaat",
+        "prefLabel": "Eluaat",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/fruit",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.fruit",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "fruit",
+        "prefLabel": "Fruit",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/gftafval",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.gftafval",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "gftafval",
+        "prefLabel": "GFT-afval",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/groenten",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.groenten",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "groenten",
+        "prefLabel": "Groenten",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/grondwater",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.grondwater",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "grondwater",
+        "prefLabel": "Grondwater",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/hardgesteente",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.hardgesteente",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "hardgesteente",
+        "prefLabel": "Hard gesteente",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/koelwater",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.koelwater",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "koelwater",
+        "prefLabel": "Koelwater",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lnapl",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.lnapl",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "lnapl",
+        "prefLabel": "Drijflaag (LNAPL)",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.lucht",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "narrower": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemlucht",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/depositie",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zwevendestof"
+        ],
+        "narrowerTransitive": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemlucht",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/depositie",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zwevendestof"
+        ],
+        "notation": "lucht",
+        "prefLabel": "Lucht",
+        "semanticRelation": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemlucht",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/depositie",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zwevendestof"
+        ],
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/melk",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.melk",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "melk",
+        "prefLabel": "Melk",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/migratie",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.migratie",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "migratie",
+        "prefLabel": "Migratie",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/oppervlaktewater",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.oppervlaktewater",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "oppervlaktewater",
+        "prefLabel": "Oppervlaktewater",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.plantaardigmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "narrower": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/fruit",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/gftafval",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/groenten",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/strooisel",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vilt"
+        ],
+        "narrowerTransitive": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/fruit",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/gftafval",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/groenten",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/strooisel",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vilt"
+        ],
+        "notation": "plantaardigmateriaal",
+        "prefLabel": "Plantaardig materiaal",
+        "semanticRelation": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/fruit",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/gftafval",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/groenten",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/strooisel",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vilt"
+        ],
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/puurproduct",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.puurproduct",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "puurproduct",
+        "prefLabel": "Puur product",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/regenwater",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.regenwater",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "regenwater",
+        "prefLabel": "Regenwater",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/schelpdieren",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.schelpdieren",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "schelpdieren",
+        "prefLabel": "Schelpdieren",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/sediment",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.sediment",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "sediment",
+        "prefLabel": "Sediment",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/strooisel",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.strooisel",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "strooisel",
+        "prefLabel": "Strooisel",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.vastdeelvdaarde",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "narrower": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodem",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eluaat",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/hardgesteente",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/sediment",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/waterbodem"
+        ],
+        "narrowerTransitive": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodem",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eluaat",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/hardgesteente",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/sediment",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/waterbodem"
+        ],
+        "notation": "vastdeelvdaarde",
+        "prefLabel": "Vaste deel van de aarde",
+        "semanticRelation": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodem",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eluaat",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/hardgesteente",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/sediment",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/waterbodem"
+        ],
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vilt",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.vilt",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "vilt",
+        "prefLabel": "Vilt",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "narrower": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/afvalwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bemalingswater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemvocht",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/drinkwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/effluent",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/grondwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/koelwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/oppervlaktewater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/regenwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeewater"
+        ],
+        "narrowerTransitive": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/afvalwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bemalingswater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemvocht",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/drinkwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/effluent",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/grondwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/koelwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/oppervlaktewater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/regenwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeeschuim",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeewater"
+        ],
+        "notation": "water",
+        "prefLabel": "Water",
+        "semanticRelation": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/afvalwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bemalingswater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemvocht",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/drinkwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/effluent",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/grondwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/koelwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/oppervlaktewater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/regenwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeeschuim",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeewater"
+        ],
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/waterbodem",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.waterbodem",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "waterbodem",
+        "prefLabel": "Waterbodem",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeeschuim",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.zeeschuim",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeewater",
+        "broaderTransitive": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeewater"
+        ],
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "zeeschuim",
+        "prefLabel": "Zeeschuim",
+        "semanticRelation": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeewater"
+        ],
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeewater",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.zeewater",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "narrower": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeeschuim",
+        "narrowerTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeeschuim",
+        "notation": "zeewater",
+        "prefLabel": "Zeewater",
+        "semanticRelation": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeeschuim"
+        ],
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zwevendestof",
+        "type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.concept.materiaalklasse.zwevendestof",
+        "broader": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "broaderTransitive": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "inScheme": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "notation": "zwevendestof",
+        "prefLabel": "Zwevende stof",
+        "semanticRelation": "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+        "topConceptOf": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse"
+    },
+    {
+        "id": "https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/materiaalklasse",
+        "type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "dc.identifier": "be.vlaanderen.bodemenondergrond.data.id.conceptscheme.materiaalklasse",
+        "definition": "Aard van de Bemonstering.",
+        "hasTopConcept": [
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/afvalwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/antropogeneobjecten",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bemalingswater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodem",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemlucht",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/bodemvocht",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/depositie",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dierlijkmateriaal",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/dnapl",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/drinkwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/effluent",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eieren",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/eluaat",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/fruit",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/gftafval",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/groenten",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/grondwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/hardgesteente",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/koelwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lnapl",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/lucht",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/melk",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/migratie",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/oppervlaktewater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/plantaardigmateriaal",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/puurproduct",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/regenwater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/schelpdieren",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/sediment",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/strooisel",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vastdeelvdaarde",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/vilt",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/water",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/waterbodem",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeeschuim",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zeewater",
+            "https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/zwevendestof"
+        ],
+        "notation": "materiaalklasse",
+        "note": "Aard van de Bemonstering.",
+        "prefLabel": "Codelijst materiaalklasse."
+    }
+]

@@ -1,20 +1,22 @@
 types : materiaalklasses
 skos:
   rules :
-    skos_rules : /../node_modules/maven-metadata-generator-npm/src/n3/skos-rules.n3
-    dcterms_rules : /../node_modules/maven-metadata-generator-npm/src/n3/dcterms-rules.n3
+    skos_rules : /../node_modules/@milieuinfo/maven-metadata-generator-npm/src/n3/skos-rules.n3
+    dcterms_rules : /../node_modules/@milieuinfo/maven-metadata-generator-npm/src/n3/dcterms-rules.n3
   prefixes :
     concept : https://data.bodemenondergrond.vlaanderen.be/id/concept/materiaalklasse/
     collectie : https://data.bodemenondergrond.vlaanderen.be/id/collection/materiaalklasse/
   path: ./main/resources/be/vlaanderen/bodemenondergrond/data/id/conceptscheme/
   name: materiaalklasse
   turtle: .ttl
+  json: .json
   jsonld: .jsonld
   xsd: .xsd
   csv: .csv
-  rdf_xml: .rdf
   xlsx: .xlsx
+  rdf_xml: .rdf
   nt: .nt
+  parquet: .parquet
 
 source:
   path: ./source/
@@ -22,8 +24,8 @@ source:
   context: context.json
 dcat:
   temp_path:
-  path_catalog: /be/vlaanderen/bodemenondergrond/data/id/catalog/
-  path_dataset: /be/vlaanderen/bodemenondergrond/data/id/dataset/
+  path_catalog: be/vlaanderen/bodemenondergrond/data/id/catalog/
+  path_dataset: be/vlaanderen/bodemenondergrond/data/id/dataset/
   name: codelijst-materiaalklasse
   dataset_jsonld: dataset.jsonld
   dataset_turtle: dataset.ttl
@@ -37,7 +39,10 @@ ap :
   turtle: .ttl
 
 metadata :
+  start_version : 0.0.1                     
   sparqlservice:
+    title: "Sparql service op endpoint https://data.bodemenondergrond.vlaanderen.be/sparql"
+    description: "Een beschrijving van de sparql service, met de verschillende kenmerken."
     endpoint: https://data.bodemenondergrond.vlaanderen.be/sparql
     feature:
       - http://www.w3.org/ns/sparql-service-description#DereferencesURIs
@@ -54,7 +59,7 @@ metadata :
     supportedLanguage: http://www.w3.org/ns/sparql-service-description#SPARQL10Query
   all :
     accessURL : https://github.com/bodemenondergrond/codelijst-materiaalklasse.git
-    contactPoint : https://data.omgeving.vlaanderen.be/id/vcard/helpdesk
+    contact : https://data.omgeving.vlaanderen.be/id/vcard/helpdesk
     license : http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0
     publisher : http://data.vlaanderen.be/id/organisatie/OVO003323
     rightsHolder :  http://data.vlaanderen.be/id/organisatie/OVO003749
@@ -71,37 +76,69 @@ metadata :
     dct.language : http://publications.europa.eu/resource/authority/language/NLD
     landingPage  : https://data.bodemenondergrond.vlaanderen.be/doc/catalog/codelijst.html
   catalog :
-    uri : https://data.bodemenondergrond.vlaanderen.be/id/catalog/codelijst
+    title: "Catalogus van datasets van codelijsten."
+    description: "Catalogus van datasets van codelijsten die onder het domein data.bodemenondergrond.vlaanderen.be gepubliceerd worden."
+    id : https://data.bodemenondergrond.vlaanderen.be/id/catalog/codelijst
     type: http://www.w3.org/ns/dcat#Catalog
   dataset :
+    title: "Dataset van de codelijst van bodezm en odergrond."
+    description: "Deze dataset bevat de codelijst van dragers voor het Chemische Stoffen en Omgevingsparameters-Register (CSOR) van de Vlaamse overheid, Departement Omgeving. Een drager beschrijft het medium waarin het kenmerk geobserveerd wordt. De codelijst bevat 11 dragers gepubliceerd als SKOS concept scheme via Linked Data."
     temporal : https://data.omgeving.vlaanderen.be/id/periodoftime/dataset_omg
     type : http://www.w3.org/ns/dcat#Dataset
+    provenance:
+      label: "Deze codelijst beschrijft de materiaalklasses"
   distribution :
+    parquet:
+      title: "Codelijst van materiaalklasse, geserialiseerd als parquet-formaat."
+      description: "Codelijst van materiaalklasse, geserialiseerd als parquet bestand."
+      mediaType: https://www.iana.org/assignments/media-types/application/vnd.apache.parquet
+      format: http://publications.europa.eu/resource/authority/file-type/PARQUET
+      type: http://www.w3.org/ns/dcat#Distribution
     xlsx:
+      title: "Codelijst van materiaalklasse, geserialiseerd als excel-formaat."
+      description: "Codelijst van materiaalklasse, geserialiseerd als excel bestand."
       mediaType: https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
       format: http://publications.europa.eu/resource/authority/file-type/XLSX
       type: http://www.w3.org/ns/dcat#Distribution
     csv :
+      title: "Codelijst van materiaalklasse, geserialiseerd als csv-formaat."
+      description: "Codelijst van materiaalklasse, geserialiseerd als csv bestand."
       mediaType : https://www.iana.org/assignments/media-types/text/csv
       format : http://publications.europa.eu/resource/authority/file-type/CSV
       type : http://www.w3.org/ns/dcat#Distribution
     nt:
+      title: "Codelijst van materiaalklasse, geserialiseerd als n-triple-formaat."
+      description: "Codelijst van materiaalklasse, geserialiseerd als n-triple bestand."
       mediaType: https://www.iana.org/assignments/media-types/application/n-triples
       format: http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES
       type: http://www.w3.org/ns/dcat#Distribution
+    json:
+      title: "Codelijst van materiaalklasse, geserialiseerd als json-formaat."
+      description: "Codelijst van dragers voor het CSOR, geserialiseerd als json bestand."
+      mediaType: https://www.iana.org/assignments/media-types/application/json
+      format: http://publications.europa.eu/resource/authority/file-type/JSON
+      type: http://www.w3.org/ns/dcat#Distribution
     ttl:
+      title: "Codelijst van materiaalklasse geserialiseerd als turtle-formaat."
+      description: "Codelijst van materiaalklasse, geserialiseerd als turtle bestand."
       mediaType: https://www.iana.org/assignments/media-types/text/turtle
       format: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
       type : http://www.w3.org/ns/dcat#Distribution
     xsd:
+      title: "Codelijst van materiaalklasse geserialiseerd als xsd-formaat."
+      description: "Codelijst van materiaalklasse, geserialiseerd als xsd bestand."
       mediaType: https://www.iana.org/assignments/media-types/application/rdf+xml
       format: http://publications.europa.eu/resource/authority/file-type/RDF_XML
       type: http://www.w3.org/ns/dcat#Distribution
     jsonld:
+      title: "Codelijst van materiaalklasse, geserialiseerd als ld+json-formaat."
+      description: "Codelijst van materiaalklasse, geserialiseerd als json-ld bestand."
       mediaType: https://www.iana.org/assignments/media-types/application/ld+json
       format: http://publications.europa.eu/resource/authority/file-type/JSON_LD
       type : http://www.w3.org/ns/dcat#Distribution
     jar :
+      title: "Codelijst van materiaalklasse, alle verspreidingsvormen samengevoegd in een jar-formaat."
+      description: "Codelijst van materiaalklasse, alle verspreidingsvormen samengevoegd in een jar bestand."
       mediaType : https://www.iana.org/assignments/media-types/application/java-archive
       format : http://publications.europa.eu/resource/authority/file-type/JAR
       type :
@@ -112,7 +149,8 @@ prefixes :
   access_right: http://publications.europa.eu/resource/authority/access-right/
   adms: http://www.w3.org/ns/adms#
   assettype: http://purl.org/adms/assettype/
-  conceptscheme: https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/
+  conceptscheme_alg: https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/
+  conceptscheme: https://data.bodemenondergrond.vlaanderen.be/id/conceptscheme/                                                                               
   country: http://publications.europa.eu/resource/authority/country/
   datasets: https://datasets.bodemenondergrond.vlaanderen.be/
   datatheme_be: http://vocab.belgif.be/auth/datatheme/
@@ -120,6 +158,7 @@ prefixes :
   dbo: http://dbpedia.org/ontology/
   dcat: http://www.w3.org/ns/dcat#
   dc: http://purl.org/dc/elements/1.1/
+  dcmitype: http://purl.org/dc/dcmitype/
   dcterms: http://purl.org/dc/terms/
   dct: http://purl.org/dc/terms/
   eurovoc: http://eurovoc.europa.eu/
@@ -128,10 +167,13 @@ prefixes :
   formats: http://www.w3.org/ns/formats/
   frequency: http://publications.europa.eu/resource/authority/frequency/
   gemet: http://www.eionet.europa.eu/gemet/concept/
+  gml: http://www.opengis.net/ont/gml#
+  gsp: http://www.opengis.net/ont/geosparql#
   licence: http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/
+  locn: http://www.w3.org/ns/locn#
   metadata: https://data.bodemenondergrond.vlaanderen.be/ns/metadata#
-  omg_catalog: https://data.bodemenondergrond.vlaanderen.be/id/catalog/
   omg_catalog_doc: https://data.bodemenondergrond.vlaanderen.be/doc/catalog/
+  omg_catalog: https://data.bodemenondergrond.vlaanderen.be/id/catalog/
   omg_collection: https://data.bodemenondergrond.vlaanderen.be/id/collection/
   omg_dataservice: https://data.bodemenondergrond.vlaanderen.be/id/dataservice/
   omg_dataset_doc: https://data.bodemenondergrond.vlaanderen.be/doc/dataset/
@@ -147,16 +189,33 @@ prefixes :
   omg_periodoftime: https://data.bodemenondergrond.vlaanderen.be/id/periodoftime/
   omg_service: https://data.bodemenondergrond.vlaanderen.be/id/service/
   omg_vcard: https://data.bodemenondergrond.vlaanderen.be/id/vcard/
+  org: http://www.w3.org/ns/org#
   ovo: http://data.vlaanderen.be/id/organisatie/
   owl: http://www.w3.org/2002/07/owl#
-  repo: https://repo.omgeving.vlaanderen.be/artifactory/release/
+  prov: http://www.w3.org/ns/prov#
+  qb: http://purl.org/linked-data/cube#
+  quantitykind: http://qudt.org/vocab/quantitykind/
+  qudt: http://qudt.org/schema/qudt/
+  qudt-schema: https://qudt.org/schema/qudt/
+  qudt-unit: https://qudt.org/vocab/unit/
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  sd: http://www.w3.org/ns/sparql-service-description#
+  repo: https://repo.omgeving.vlaanderen.be/artifactory/release/
+  rov: http://www.w3.org/ns/regorg#
+  schema: https://schema.org/
+  sdmx-attribute: http://purl.org/linked-data/sdmx/2009/attribute#
+  sdmx-dimension: http://purl.org/linked-data/sdmx/2009/dimension#
+  sdmx-measure: http://purl.org/linked-data/sdmx/2009/measure#
+  sh: http://www.w3.org/ns/shacl#
   skos: http://www.w3.org/2004/02/skos/core#
+  sosa: http://www.w3.org/ns/sosa/
   spdx: http://spdx.org/rdf/terms#
   ssd: http://www.w3.org/ns/sparql-service-description#
+  ssn: http://www.w3.org/ns/ssn/
+  ssn-system: http://www.w3.org/ns/ssn/systems/
   ts: http://www.w3.org/ns/formats/
+  time: http://www.w3.org/2006/time#
+  unit: http://qudt.org/vocab/unit/
   vcard: http://www.w3.org/2006/vcard/ns#
   void: http://rdfs.org/ns/void#
   wise: http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/

@@ -4,9 +4,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/01_codelijst_skos_from_csv.js",
-  "scripts": {
-    "create_metadata": "cd src && node 02_metadata.js"
+"scripts": {
+    "csv:check": "cd src && node 00_fix_csv_columns.js",
+    "csv:fix": "cd src && node 00_fix_csv_columns.js --fix",
+    "generate_skos": "cd src && node 01_codelijst_skos_from_csv.js",
+    "create_metadata": "cd src && node 02_metadata.js",
+    "deploy": "cd src && node 99_deploy_latest.js"
   },
+
   "keywords": [
     "milieuinfo",
     "Bodem en ondergrond",
@@ -17,13 +22,14 @@
     "n3-reasoning",
     "maven"
   ],
-  "author": "Geert Van Haute",
+  "author": "Vlaamse Overheid, Departement omgeving",
   "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2",
+    "csv-parser": "^3.2.0",
     "dotenv": "^16.4.5",
     "js-yaml": "^4.1.0",
-    "maven-metadata-generator-npm": "^0.2.56"
+    "@milieuinfo/maven-metadata-generator-npm": "^0.5.2"
   },
   "overrides": {
     "xlsx": "0.18.5"
